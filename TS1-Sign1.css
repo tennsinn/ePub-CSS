@@ -1,6 +1,0 @@
-/* ePub Framework CSS for TS1-Sign1 by 两仪天心 version_1.2 */
-@charset "UTF-8";
-/* Information - maker */
-@font-face { font-family: "maker"; src: url("../Fonts/maker.ttf") format("truetype"); }
-.information dl.maker { font-family: maker, TS-KaiTi, serif; font-size: 1.1em; line-height: 1.2; border-bottom: 0.25em double black; }
-.information dl.maker > dt { font-size: 0.8em; color: Gray; margin-bottom: -0.3em; }

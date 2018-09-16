@@ -1,0 +1,124 @@
+@charset "UTF-8";
+/*! ePub CSS, Framework·TL1-frame, by 两仪天心&轻亦之间, version_2.3 */
+@page { margin: 0; padding: 0; }
+/* Reset */
+* { margin: 0; padding: 0; border: none; }
+body { font-family: DFLT, SP, sans-serif; font-size: 1em; line-height: 1.2; text-indent: 0; vertical-align: baseline; background: transparent; word-spacing: normal; letter-spacing: normal; white-space: normal; word-wrap: break-word; overflow-wrap: break-word; text-align: justify; -ms-text-align-last: left; -moz-text-align-last: left; -webkit-text-align-last: left; -epub-text-align-last: left; text-align-last: left; -webkit-line-break: normal; -epub-line-break: normal; line-break: normal; -webkit-word-break: normal; -epub-word-break: normal; word-break: normal; -ms-hyphens: auto; -moz-hyphens: auto; -webkit-hyphens: auto; -epub-hyphens: auto; hyphens: auto; -webkit-text-underline-position: under left; -epub-text-underline-position: under left; text-underline-position: under left; }
+h1, .h1 { font-family: title, Hei, SP, sans-serif; font-size: 2.5em; line-height: 1; font-weight: normal; text-indent: 0em; }
+h2, .h2 { font-family: subtitle, Song, SP, serif; font-size: 2em; line-height: 1; font-weight: normal; text-indent: 0em; }
+h3, .h3 { font-family: Hei, SP, sans-serif; font-size: 1.35em; line-height: 1; text-align: center; margin-top: 1em; font-weight: normal; text-indent: 0em; }
+h4, .h4 { font-family: Song, SP, sans-serif; font-size: 1.2em; line-height: 1; text-align: center; font-weight: normal; text-indent: 0em; }
+h5, .h5 { font-family: DFLT, SP, sans-serif; font-size: 1.1em; line-height: 1; text-align: center; font-weight: normal; text-indent: 0em; }
+li { list-style: none; }
+table, .table { display: table; margin-left: auto; margin-right: auto; }
+img { max-width: 100%; max-height: 100%; }
+ruby { ruby-align: center; ruby-position: over; line-height: 1; text-indent: 0; }
+em { font-style: inherit; font-weight: inherit; -webkit-text-emphasis-position: under right; -epub-text-emphasis-position: under right; text-emphasis-position: under right; }
+a { color: grey; text-decoration: none; }
+/* font-face */
+@font-face { font-family: "DFLT"; src: local("微软雅黑"), local("STYuan"), local("DK-HEITI"); }
+@font-face { font-family: "SP"; src: url("../Fonts/special.ttf") format("truetype"), local("DK-SYMBOL"); }
+@font-face { font-family: "Hei"; src: local("微软雅黑"), local("黑体"), local("Heiti"), local("Heiti SC"), local("STHeiti"), local("DK-HEITI"); }
+@font-face { font-family: "Yuan"; src: local("圆体"), local("Yuanti"), local("Yuanti SC"), local("幼圆"), local("YouYuan"), local("STYuan"), local("DK-HEITI"); }
+@font-face { font-family: "Kai"; src: local("楷体"), local("Kaiti"), local("Kaiti SC"), local("STKai"), local("DK-KAITI"); }
+@font-face { font-family: "Song"; src: local("宋体"), local("Songti"), local("Songti SC"), local("STSong"), local("DK-SONGTI"); }
+@font-face { font-family: "title"; src: url("../Fonts/title.ttf") format("truetype"); }
+@font-face { font-family: "subtitle"; src: url("../Fonts/subtitle.ttf") format("truetype"); }
+@font-face { font-family: "order"; src: url("../Fonts/order.ttf") format("truetype"); }
+@font-face { font-family: "aut"; src: url("../Fonts/aut.ttf") format("truetype"); }
+@font-face { font-family: "ill"; src: url("../Fonts/ill.ttf") format("truetype"); }
+@font-face { font-family: "conttitle"; src: url("../Fonts/conttitle.ttf") format("truetype"); }
+@font-face { font-family: "contents"; src: url("../Fonts/contents.ttf") format("truetype"); }
+@font-face { font-family: "subcont"; src: url("../Fonts/subcont.ttf") format("truetype"); }
+/* Pages */
+body > section, body > .section { duokan-bleed: leftright; }
+.title_page .aut { font-family: aut, Kai, SP, serif; }
+.title_page .ill { font-family: ill, Yuan, SP, sans-serif; }
+.title_page .order { font-family: order, Song, SP, serif; }
+.introduction, .interleaf, .chapter, .postscript, .feature { text-indent: 2em; }
+.introduction p, .chapter p, .postscript p, .feature p, .interleaf p { margin: 0.25em 5%; }
+.contents h3, .contents .h3 { font-family: conttitle, Hei, SP, sans-serif; }
+.contents ol, .chapter h3, .chapter .h3, .feature h3, .feature .h3 { font-family: contents, Song, SP, sans-serif; }
+.chapter h4, .chapter .h4, .feature h4, .feature .h4 { font-family: subcont, Song, SP, sans-serif; }
+h3 ~ section, h3 ~ .section, .h3 ~ .section, .h3 ~ section, .interleaf > section, .interleaf > .section { margin-top: 1.5em; }
+h4 ~ section, h4 ~ .section, .h4 ~ .section, .h4 ~ section { margin-top: 1em; }
+.chapter p.spr, .feature p.spr { text-indent: 0em; text-align: center; margin: 0; }
+.chapter h3 ~ p.spr, .chapter .h3 ~ p.spr, .feature h3 ~ p.spr, .feature .h3 ~ p.spr { margin-top: 1.5em; }
+.chapter h4 ~ p.spr, .chapter .h4 ~ p.spr, .feature h4 ~ p.spr, .feature .h4 ~ p.spr { margin-top: 1em; }
+.chapter p.pre-box { border: thin solid black; padding: 0.5em; }
+/* Components - infobox */
+.infobox { font-size: 1em; line-height: 1; text-indent: 0; margin-left: 2%; margin-right: 2%; }
+.infobox p { padding-left: 3%; padding-right: 3%; }
+.infobox p.top { padding-top: 0.25em; margin-top: 0.25em; border-top: thin solid black; }
+.infobox p.bottom { padding-bottom: 0.25em; border-bottom: thin solid black; }
+/* Components - introdl */
+.introdl { font-size: 1em; line-height: 1.1; }
+.introdl dt, .introdl p.dt { font-family: Kai, SP, serif; text-indent: 0em; margin-top: 1em; margin: 1em 5% 0 5%; }
+.introdl dt.aut, .introdl p.aut { font-family: aut, Kai, SP, serif; }
+.introdl dt.ill, .introdl p.ill { font-family: ill, Kai, SP, serif; }
+.introdl dt span, .introdl p.dt span { font-family: Song, SP, serif; font-size: 0.7em; color: grey; }
+.introdl dd, .introdl p.dd { text-indent: 2em; margin: 0.25em 5%; }
+/* Components - list, standard left normal underline */
+.list-sl-nu { font-size: 1.1em; line-height: 1.1; text-align: left; display: table; margin: 0 auto; }
+.list-sl-nu > li { margin-top: 1em; }
+.list-sl-nu a { color: dimgray; text-decoration: underline; }
+/* Components - list, standard center normal relax normal */
+.list-sc-rn { text-align: center; font-size: 1.1em; line-height: 1.1; }
+.list-sc-rn > li { margin-top: 1.5em; }
+/* Components - list, standard center, relax border, bottom dotted */
+.list-sc-rb-bd { text-align: center; font-size: 1.1em; margin-left: auto; margin-right: auto; }
+.list-sc-rb-bd > li { padding: 0 0.25em 0.5em 0.25em; margin-top: 1.5em; border-bottom: medium dotted; }
+.list-sc-rb-bd a { color: dimgray; text-decoration: none; }
+/* Components - list, vertical right normal normal */
+.list-vr-nn { font-size: 1.1em; line-height: 1; page-break-inside: avoid; break-inside: avoid; }
+.list-vr-nn > li { float: right; text-align: center; width: 1em; padding: 0 0.5em; }
+/* Components - endnote */
+.en-ref { color: grey; vertical-align: top; font-size: 0.8em; }
+.en-ref > img { width: 1em; }
+.endnotes { margin-left: 2%; margin-right: 2%; text-indent: 0em; }
+.endnotes > .border { width: 50%; border-top: 0.1em solid grey; }
+.endnotes .list { margin: 0.5em 3% 0 3%; }
+.endnotes .list li { color: grey; font-size: 0.8em; line-height: 1.2; }
+.endnotes .list a { color: grey; text-decoration: underline; }
+/* Components - illus */
+.illus { text-align: center; text-indent: 0em; height: 100vh; width: 100vw; margin: 0; padding: 0; page-break-inside: avoid; break-inside: avoid; display: flex; display: -webkit-flex; align-items: center; -webkit-align-items: center; justify-content: center; -webkit-justify-content: center; }
+.illus > img { margin: auto; }
+/* Components - column */
+.col-2 { width: 45%; padding: 2.5%; margin: 0; }
+.col-3 { width: 29.33%; padding: 2%; margin: 0; }
+.col-4 { width: 22%; padding: 1.5%; margin: 0; }
+/* Components - full */
+.full { width: 100vw; height: 100vh; page-break-inside: avoid; break-inside: avoid; display: flex; display: -webkit-flex; align-items: center; -webkit-align-items: center; justify-content: center; -webkit-justify-content: center; }
+.full > * { margin: auto; }
+/* Components - label */
+.label { padding: 0.25em; border-radius: 0.5em; }
+.round { border-radius: 50%; }
+/* Components - diamond */
+.diamond-top, .diamond-right, .diamond-bottom, .diamond-left { width: 1em; margin: 0.25em auto; }
+.diamond-top > .b1 { height: 0; width: 0; margin: 0 auto; border-top: 0em solid transparent; border-right: 0.5em solid transparent; border-bottom: 0.5em solid; border-left: 0.5em solid transparent; }
+.diamond-top > .b2 { height: 0; width: 0; margin: 0 auto; border-top: 2em solid; border-right: 0.5em solid transparent; border-bottom: 0em solid transparent; border-left: 0.5em solid transparent; }
+.diamond-box { margin: 1em auto; -o-transform: rotate(45deg); -ms-transform: rotate(45deg); -moz-transform: rotate(45deg); -webkit-transform: rotate(45deg); transform: rotate(45deg); }
+.diamond-box > .bin { margin: auto; -o-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -webkit-transform: rotate(-45deg); transform: rotate(-45deg); }
+/* Page - width */
+.page-18 { width: 18em; max-width: 100vw; margin-left: auto; margin-right: auto; }
+.page-20 { width: 20em; max-width: 100vw; margin-left: auto; margin-right: auto; }
+/* Paragraph - line */
+.line-s p { line-height: 1; height: 1em; white-space: nowrap; }
+.line-sc p { line-height: 1; height: 1em; white-space: nowrap; text-align: center; margin-left: auto; margin-right: auto; }
+.line-sr p { line-height: 1; height: 1em; white-space: nowrap; text-align: right; margin-left: auto; margin-right: 0; }
+.line-sl p { line-height: 1; height: 1em; white-space: nowrap; text-align: left; margin-left: 0; margin-right: auto; }
+.line-v p { line-height: 1; width: 1em; }
+.line-vc p { line-height: 1; width: 1em; text-align: center; margin-left: auto; margin-right: auto; }
+.line-vr p { line-height: 1; width: 1em; text-align: right; margin-left: auto; margin-right: 0; }
+.line-vl p { line-height: 1; width: 1em; text-align: left; margin-left: 0; margin-right: auto; }
+.line-sv p { line-height: 1; width: 1em; height: 1em; white-space: nowrap; }
+.line-svc p { line-height: 1; width: 1em; height: 1em; white-space: nowrap; text-align: center; margin-left: auto; margin-right: auto; }
+.line-svr p { line-height: 1; width: 1em; height: 1em; white-space: nowrap; text-align: right; margin-left: auto; margin-right: 0; }
+.line-svl p { line-height: 1; width: 1em; height: 1em; white-space: nowrap; text-align: left; margin-left: 0; margin-right: auto; }
+.line-right p { float: right; text-align: unset; }
+.line-left p { float: left; }
+.line-none p { float: none; }
+.line-cps-0e1 p { margin-top: -0.1em; margin-bottom: -0.1em; }
+.line-cps-0e25 p { margin-top: -0.25em; margin-bottom: -0.25em; }
+.line-cps-0e5 p { margin-top: -0.5em; margin-bottom: -0.5em; }
+.void { width: 0; height: 0; color: transparent; background: transparent; display: none; visibility: hidden; margin: 0; padding: 0; border: none; }

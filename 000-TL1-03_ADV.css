@@ -1,0 +1,25 @@
+@charset "UTF-8";
+/*! ePub CSS, Framework·TL1-advanced, by 两仪天心&轻亦之间, version_0.6 */
+/* Text - emphasis */
+em.none, .em-none { -webkit-text-emphasis-style: none; -epub-text-emphasis-style: none; text-emphasis-style: none; }
+em.fd, .em-fd { -webkit-text-emphasis-style: filled dot; -epub-text-emphasis-style: filled dot; text-emphasis-style: filled dot; }
+/* Ruby - align */
+ruby.center, .ruby-center { ruby-align: center; }
+ruby.left, .ruby-left { ruby-align: left; ruby-align: start; }
+ruby.right, .ruby-right { ruby-align: right; ruby-align: start; }
+ruby.between, .ruby-between { ruby-align: distribute-letter; ruby-align: space-between; }
+ruby.around, .ruby-around { ruby-align: distribute-space; ruby-align: space-around; }
+/* Writing - mode */
+.wm-vrl { writing-mode: vertical-rl; -webkit-writing-mode: vertical-rl; -epub-writing-mode: vertical-rl; }
+.wm-vlr { writing-mode: vertical-lr; -webkit-writing-mode: vertical-lr; -epub-writing-mode: vertical-lr; }
+.wm-ltr { direction: ltr; }
+.wm-rtl { direction: rtl; }
+/* Page - break */
+.break-avoid { page-break-inside: avoid; break-inside: avoid; }
+.break-both { page-break-before: always; break-before: always; page-break-after: always; break-after: always; }
+.break-before { page-break-before: always; break-before: always; }
+.break-after { page-break-after: always; break-after: always; }
+/* Column */
+.col-2 { -webkit-column-count: 2; -moz-column-count: 2; column-count: 2; }
+.col-3 { -webkit-column-count: 3; -moz-column-count: 3; column-count: 3; }
+.col-4 { -webkit-column-count: 4; -moz-column-count: 4; column-count: 4; }
