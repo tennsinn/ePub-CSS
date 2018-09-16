@@ -1,0 +1,152 @@
+@charset "UTF-8";
+/*! ePub CSS, TL2-Framework, by 两仪天心&轻亦之间, version_3.1.1 */
+/* Define */
+@namespace epub "http://www.idpf.org/2007/ops";
+@page { margin: 0; padding: 0; border: none; }
+@font-face { font-family: "DFLT"; src: local("微软雅黑"), local("STYuan"), local("DK-HEITI"); }
+@font-face { font-family: "SP"; src: url("../Fonts/special.ttf") format("truetype"), local("DK-SYMBOL"); }
+@font-face { font-family: "Hei"; src: local("微软雅黑"), local("黑体"), local("Heiti"), local("Heiti SC"), local("STHeiti"), local("DK-HEITI"); }
+@font-face { font-family: "Yuan"; src: local("圆体"), local("Yuanti"), local("Yuanti SC"), local("幼圆"), local("YouYuan"), local("STYuan"), local("DK-HEITI"); }
+@font-face { font-family: "Kai"; src: local("楷体"), local("Kaiti"), local("Kaiti SC"), local("STKai"), local("DK-KAITI"); }
+@font-face { font-family: "Song"; src: local("华文中宋"), local("宋体"), local("Songti"), local("Songti SC"), local("STSong"), local("DK-SONGTI"); }
+@font-face { font-family: "title"; src: url("../Fonts/title.ttf") format("truetype"); }
+@font-face { font-family: "subtitle"; src: url("../Fonts/subtitle.ttf") format("truetype"); }
+@font-face { font-family: "order"; src: url("../Fonts/order.ttf") format("truetype"); }
+@font-face { font-family: "aut"; src: url("../Fonts/aut.ttf") format("truetype"); }
+@font-face { font-family: "ill"; src: url("../Fonts/ill.ttf") format("truetype"); }
+@font-face { font-family: "conttitle"; src: url("../Fonts/conttitle.ttf") format("truetype"); }
+@font-face { font-family: "contents"; src: url("../Fonts/contents.ttf") format("truetype"); }
+@font-face { font-family: "subcont"; src: url("../Fonts/subcont.ttf") format("truetype"); }
+/* Reset */
+* { margin: 0; padding: 0; border: none; max-width: 100%; }
+body { font-family: DFLT, SP, sans-serif; font-size: 1em; line-height: 1.2; text-indent: 0; vertical-align: baseline; background: transparent; word-spacing: normal; letter-spacing: normal; white-space: normal; word-wrap: break-word; overflow-wrap: break-word; text-align: left; -moz-text-align-last: auto; -webkit-text-align-last: auto; -epub-text-align-last: auto; text-align-last: auto; -webkit-line-break: auto; -epub-line-break: auto; line-break: auto; -webkit-word-break: break-all; -epub-word-break: break-all; word-break: break-all; hanging-punctuation: first allow-end last; -ms-hyphens: auto; -moz-hyphens: auto; -webkit-hyphens: auto; -epub-hyphens: auto; hyphens: auto; -webkit-text-underline-position: under left; -epub-text-underline-position: under left; text-underline-position: under left; overflow: visible; }
+h1, .h1 { font-family: title, Song, SP, serif; font-weight: normal; font-size: 2.5em; line-height: 1; text-indent: 0em; }
+h2, .h2 { font-family: subtitle, Song, SP, serif; font-weight: normal; font-size: 2em; line-height: 1; text-indent: 0em; }
+h3, .h3 { font-family: Hei, SP, sans-serif; font-weight: normal; font-size: 1.35em; line-height: 1; text-align: center !important; margin: 1.5em 0; text-indent: 0em; }
+h4, .h4 { font-family: Kai, SP, serif; font-weight: normal; font-size: 1.2em; line-height: 1; text-align: center !important; margin: 1.25em 0; text-indent: 0em; }
+h5, .h5 { font-family: DFLT, SP, sans-serif; font-weight: normal; font-size: 1.1em; line-height: 1; text-align: center !important; text-indent: 0em; }
+ol, ul, li { list-style: none; }
+table, .t, .table { display: table; margin-left: auto; margin-right: auto; }
+img { max-width: 100%; max-height: 100%; }
+ruby { ruby-align: center; -epub-ruby-position: over; ruby-position: over; text-indent: 0; }
+em, .em, .emphasis { font-style: inherit; font-weight: inherit; -webkit-text-emphasis-position: under right; -epub-text-emphasis-position: under right; text-emphasis-position: under right; -webkit-text-emphasis-style: filled dot; -epub-text-emphasis-style: filled dot; text-emphasis-style: filled dot; }
+a { color: dimgrey; text-decoration: none; }
+b, .b, .bold { font-weight: bold; }
+i, .i, .italic { font-style: italic; }
+u, .u, .underline { text-decoration: underline; }
+center, .c .center { text-align: center; }
+/* Reset - IE Edge */
+:root:not(.bookcontent-fixed) p { text-align: inherit; }
+/* Format - section */
+body > section, body > .section { duokan-bleed: leftright; overflow: visible; margin: 0 auto; width: 100%; }
+.epigraph { padding-top: 40%; }
+/* Format - pragraph */
+.introduction, .interleaf, .preface, .chapter, .afterword, .feature { text-indent: 2em; }
+.introduction p, .interleaf p, .epigraph p, .preface p, .chapter p, .afterword p, .feature p { margin: 0.5em 5%; }
+.appendix p, .color_page p { margin: 0.25em 5%; }
+h3 p, .h3 p { margin: 0; }
+/* Format - font */
+.f-dflt { font-family: DFLT, SP, sans-serif; }
+.f-sp { font-family: SP, sans-serif; }
+.f-ht { font-family: Hei, SP, sans-serif; }
+.f-yt { font-family: Yuan, SP, sans-serif; }
+.f-kt { font-family: Kai, SP, serif; }
+.f-st { font-family: Song, SP, serif; }
+.aut { font-family: aut, Song, SP, serif; }
+.ill { font-family: ill, Song, SP, serif; }
+.trl { font-family: trl, Song, SP, serif; }
+.order { font-family: order, Song, SP, serif; }
+.contents h3, .contents .h3 { font-family: conttitle, Hei, SP, sans-serif; }
+.contents ol, .chapter h3, .chapter .h3, .feature h3, .feature .h3 { font-family: contents, Song, SP, sans-serif; }
+.chapter h4, .chapter .h4, .feature h4, .feature .h4 { font-family: subcont, Song, SP, sans-serif; }
+/* Components - page */
+.page-med { width: 20em; margin: auto; }
+.page-full { text-indent: 0; width: 100%; height: 100vh; page-break-inside: avoid; break-inside: avoid; display: flex; display: -webkit-flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center; }
+.page-full > * { margin: auto; }
+html.page-one, html.page-one > body, html.page-one > body > section, html.page-one > body > .section { height: 100%; }
+/* Components - line */
+p.line-h, .line-h p { line-height: 1; height: 1em; white-space: nowrap; }
+p.line-hc, .line-hc p { line-height: 1; height: 1em; white-space: nowrap; text-align: center !important; margin-left: auto; margin-right: auto; }
+p.line-hr, .line-hr p { line-height: 1; height: 1em; white-space: nowrap; text-align: right !important; margin-left: auto; margin-right: 0; }
+p.line-hl, .line-hl p { line-height: 1; height: 1em; white-space: nowrap; text-align: left !important; margin-left: 0; margin-right: auto; }
+p.line-v, .line-v p { line-height: 1; width: 1em; }
+p.line-vc, .line-vc p { line-height: 1; width: 1em; text-align: center !important; margin-left: auto; margin-right: auto; }
+p.line-vr, .line-vr p { line-height: 1; width: 1em; text-align: right !important; margin-left: auto; margin-right: 0; }
+p.line-vl, .line-vl p { line-height: 1; width: 1em; text-align: left !important; margin-left: 0; margin-right: auto; }
+p.line-hv, .line-hv p { line-height: 1; width: 1em; height: 1em; white-space: nowrap; }
+p.line-hvc, .line-hvc p { line-height: 1; width: 1em; height: 1em; white-space: nowrap; text-align: center !important; margin-left: auto; margin-right: auto; }
+p.line-hvr, .line-hvr p { line-height: 1; width: 1em; height: 1em; white-space: nowrap; text-align: right !important; margin-left: auto; margin-right: 0; }
+p.line-hvl, .line-hvl p { line-height: 1; width: 1em; height: 1em; white-space: nowrap; text-align: left !important; margin-left: 0; margin-right: auto; }
+p.line-right, .line-right p { float: right; text-align: unset; }
+p.line-left, .line-left p { float: left; }
+p.line-none, .line-none p { float: none; }
+p.line-cps-0e1, .line-cps-0e1 p { margin-top: -0.1em; margin-bottom: -0.1em; }
+p.line-cps-0e25, .line-cps-0e25 p { margin-top: -0.25em; margin-bottom: -0.25em; }
+p.line-cps-0e5, .line-cps-0e5 p { margin-top: -0.5em; margin-bottom: -0.5em; }
+p.line-eps-0e1, .line-eps-0e1 p { margin-top: 0.1em; margin-bottom: 0.1em; }
+p.line-eps-0e25, .line-eps-0e25 p { margin-top: 0.25em; margin-bottom: 0.25em; }
+p.line-eps-0e5, .line-eps-0e5 p { margin-top: 0.5em; margin-bottom: 0.5em; }
+/* Components - pre */
+.pre-box { margin-left: 5%; margin-right: 5%; border: thin solid black; }
+.pre-small { font-size: 0.8em; text-indent: 0; text-align: center !important; }
+/* Components - infobox */
+.infobox { font-size: 1em; line-height: 1.1; text-indent: 0; margin-left: 2%; margin-right: 2%; }
+.infobox p { padding-left: 3%; padding-right: 3%; }
+.infobox p.top { padding-top: 0.25em; margin-top: 0.25em; border-top: thin solid black; }
+.infobox p.bottom { padding-bottom: 0.25em; border-bottom: thin solid black; }
+/* Components - introdl */
+.introdl { font-size: 1em; line-height: 1.1; }
+.introdl dt, .introdl p.dt { font-family: Kai, SP, serif; text-indent: 0em; margin-top: 1em; margin: 1em 5% 0 5%; }
+.introdl dt span, .introdl p.dt span { font-family: Song, SP, serif; font-size: 0.7em; color: grey; }
+.introdl dd, .introdl p.dd { text-indent: 2em; margin: 0.5em 5%; }
+/* Components - list - standard left, normal underline */
+.list-sl-nu { font-size: 1.1em; line-height: 1.1; text-align: left !important; margin: 0 auto; }
+.list-sl-nu > li { margin-top: 1em; }
+.list-sl-nu a { color: dimgray; text-decoration: underline; }
+/* Components - list - standard center, relax normal */
+.list-sc-rn { font-size: 1.1em; line-height: 1.1; text-align: center !important; margin: auto; }
+.list-sc-rn > li { margin-top: 1.5em; }
+.list-sc-rn a { color: dimgray; text-decoration: none; }
+/* Components - list - standard center, normal normal */
+.list-sc-nn { font-size: 1.1em; line-height: 1.1; text-align: center !important; margin: auto; }
+.list-sc-nn > li { margin-top: 1em; }
+.list-sc-nn a { color: dimgray; text-decoration: none; }
+/* Components - list - standard center, relax border, bottom dotted */
+.list-sc-rb-bd { font-size: 1.1em; line-height: 1.2; text-align: center !important; margin: auto; }
+.list-sc-rb-bd > li { margin-top: 1.5em; padding: 0 0.25em 0.5em 0.25em; border-bottom: medium dotted; }
+.list-sc-rb-bd a { color: dimgray; text-decoration: none; }
+/* Components - list - vertical right, normal normal */
+.list-vr-nn { font-size: 1.1em; line-height: 1; page-break-inside: avoid; break-inside: avoid; }
+.list-vr-nn > li { float: right; text-align: center !important; width: 1em; padding: 0 0.5em; }
+/* Components - endnote */
+.en-ref { color: grey; text-decoration: underline; vertical-align: top; font-size: 0.75em; }
+.en-ref > img { width: 1em; }
+footer, .footer { margin-left: 2%; margin-right: 2%; text-indent: 0em; }
+.endnotes { margin: 0.5em 3%; }
+.endnotes li { color: grey; font-size: 0.8em; line-height: 1.2; margin: 0.25em 0; }
+.endnote a { color: grey; text-decoration: underline; }
+/* Components - separator */
+p.spr { text-indent: 0em; text-align: center !important; margin: 0; }
+h3 ~ p.spr, .h3 ~ p.spr { margin: 1.5em 0; }
+h4 ~ p.spr, .h4 ~ p.spr { margin: 1em 0; }
+.spr-endnotes { width: 50%; border-top: thin solid grey; }
+/* Components - illus */
+.illus { text-indent: 0; text-align: center !important; width: 100%; height: 100vh; page-break-inside: avoid; break-inside: avoid; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center; }
+.illus > * { margin: auto; }
+/* Components - shape */
+.roundrect { padding: 0.25em; border-radius: 0.5em; }
+.circle { border-radius: 50%; }
+/* Components - shape - rhombus */
+.rhombus { width: 1em; margin: 0.25em auto; }
+.rhombus > div { height: 0; width: 0; margin: 0 auto; border: 0.5em solid transparent; }
+.rhombus > .up1 { border-top: 0em solid transparent; border-bottom: 0.5em solid; }
+.rhombus > .up2 { border-top: 2em solid; border-bottom: 0em solid transparent; }
+.rhombus > .left1 { border-top: 0em solid transparent; border-right: 2em solid transparent; border-bottom: 0.5em solid; }
+.rhombus > .left2 { border-top: 0.5em solid; border-right: 2em solid transparent; border-bottom: 0em solid transparent; }
+.rhombus > .down1 { border-top: 0em solid transparent; border-bottom: 2em solid; }
+.rhombus > .down2 { border-top: 0.5em solid; border-bottom: 0em solid transparent; }
+.rhombus > .right1 { border-top: 0em solid transparent; border-bottom: 0.5em solid; border-left: 2em solid transparent; }
+.rhombus > .right2 { border-top: 0.5em solid; border-bottom: 0em solid transparent; border-left: 2em solid transparent; }
+/* Components - container - rhombus */
+.rhombus-box { margin: 1em auto; -o-transform: rotate(45deg); -ms-transform: rotate(45deg); -moz-transform: rotate(45deg); -webkit-transform: rotate(45deg); transform: rotate(45deg); }
+.rhombus-box > .in { margin: auto; -o-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -webkit-transform: rotate(-45deg); transform: rotate(-45deg); }

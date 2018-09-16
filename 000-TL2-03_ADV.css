@@ -1,21 +1,16 @@
 @charset "UTF-8";
-/*! ePub CSS, Framework·TL1-advanced, by 两仪天心&轻亦之间, version_0.7 */
-/* Text - emphasis */
-em.none, .em-none { -webkit-text-emphasis-style: none; -epub-text-emphasis-style: none; text-emphasis-style: none; }
-em.filleddot, .em-fd { -webkit-text-emphasis-style: filled dot; -epub-text-emphasis-style: filled dot; text-emphasis-style: filled dot; }
-/* Ruby - align */
-ruby.center, .ruby-c { ruby-align: center; }
-ruby.left, .ruby-l { ruby-align: left; ruby-align: start; }
-ruby.right, .ruby-r { ruby-align: right; ruby-align: start; }
-ruby.between, .ruby-b { ruby-align: distribute-letter; ruby-align: space-between; }
-ruby.around, .ruby-a { ruby-align: distribute-space; ruby-align: space-around; }
-/* Writing - mode */
+/*! ePub CSS, TL2-Advanced, by 两仪天心&轻亦之间, version_3.0.0 */
+/* Special */
+.normal { font-weight: normal; font-style: normal; letter-spacing: normal; }
+.void { width: 0; height: 0; color: transparent; background: transparent; display: none; visibility: hidden; margin: 0; padding: 0; border: none; }
+/* Text Emphasis */
+.em-no { -webkit-text-emphasis-style: none; -epub-text-emphasis-style: none; text-emphasis-style: none; }
+/* Writing Mode */
 .wm-vrl { -webkit-writing-mode: vertical-rl; -epub-writing-mode: vertical-rl; writing-mode: vertical-rl; }
 .wm-vlr { -webkit-writing-mode: vertical-lr; -epub-writing-mode: vertical-lr; writing-mode: vertical-lr; }
 .wm-ltr { direction: ltr; }
 .wm-rtl { direction: rtl; }
-/* Page - break */
-.break-avoid { page-break-before: avoid; break-before: avoid; page-break-after: avoid; break-after: avoid; }
+/* Page Break */
 .break-both { page-break-before: always; break-before: always; page-break-after: always; break-after: always; }
 .break-before { page-break-before: always; break-before: always; }
 .break-after { page-break-after: always; break-after: always; }
@@ -23,7 +18,7 @@ ruby.around, .ruby-a { ruby-align: distribute-space; ruby-align: space-around; }
 .col-2 { -webkit-column-count: 2; -moz-column-count: 2; column-count: 2; }
 .col-3 { -webkit-column-count: 3; -moz-column-count: 3; column-count: 3; }
 .col-4 { -webkit-column-count: 4; -moz-column-count: 4; column-count: 4; }
-/* Transform - origin */
+/* Transform Origin */
 .ori-c { -o-transform-origin: center; -ms-transform-origin: center; -moz-transform-origin: center; -webkit-transform-origin: center; transform-origin: center; }
 .ori-tl { -o-transform-origin: top left; -ms-transform-origin: top left; -moz-transform-origin: top left; -webkit-transform-origin: top left; transform-origin: top left; }
 .ori-tr { -o-transform-origin: top right; -ms-transform-origin: top right; -moz-transform-origin: top right; -webkit-transform-origin: top right; transform-origin: top right; }
