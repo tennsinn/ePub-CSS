@@ -1,0 +1,114 @@
+/* ePub Framework CSS for TS1-Frame by 两仪天心 version_2.5 */
+@charset "UTF-8";
+/* Global */
+* { margin: 0; padding: 0; border: none; }
+li { list-style: none; }
+article, .article { padding: 1% 1%; font-family: TS-Default, TS-Special, sans-serif; }
+section, .section { margin-top: 1.5em; }
+section > section, .section > .section { margin-top: 0.5em; }
+table, .table { display: table; margin-left: auto; margin-right: auto; }
+img { max-width: 100%; max-height: 100%; page-break-inside: avoid; }
+.illus { text-align: center; duokan-bleed: leftright; }
+h1, .heading-1 { font-size: 2.5em; line-height: 1; }
+h2, .heading-2 { font-size: 2em; line-height: 1; }
+h3, .heading-3 { font-family: TS-HeiTi, TS-Special, sans-serif; font-size: 1.35em; line-height: 1; text-align: center; margin-top: 0.5em; }
+h4, .heading-4 { font-family: TS-SongTi, TS-Special, sans-serif; font-size: 1.1em; line-height: 1; text-align: center; }
+.keyword { font-family: TS-KaiTi, TS-Special, serif; font-size: 1em; line-height: 1; margin-top: 1em; }
+p { font-size: 1em; line-height: 1.2; }
+/* Font - family */
+@font-face { font-family: "TS-Default"; src: local("微软雅黑"), local("STYuan"), local("DK-HEITI"); }
+@font-face { font-family: "TS-Special"; src: url("../Fonts/special.ttf") format("truetype"), local("DK-SYMBOL"); }
+.f-sp { font-family: TS-Special, sans-serif; }
+@font-face { font-family: "TS-HeiTi"; src: local("微软雅黑"), local("黑体"), local("Heiti"), local("Heiti SC"), local("STHeiti"), local("DK-HEITI"); }
+.f-ht { font-family: TS-HeiTi, TS-Special, sans-serif; }
+@font-face { font-family: "TS-YuanTi"; src: local("圆体"), local("Yuanti"), local("Yuanti SC"), local("幼圆"), local("YouYuan"), local("STYuan"), local("DK-HEITI"); }
+.f-yt { font-family: TS-YuanTi, TS-Special, sans-serif; }
+@font-face { font-family: "TS-KaiTi"; src: local("楷体"), local("Kaiti"), local("Kaiti SC"), local("STKai"), local("DK-KAITI"); }
+.f-kt { font-family: TS-KaiTi, TS-Special, serif; }
+@font-face { font-family: "TS-SongTi"; src: local("宋体"), local("Songti"), local("Songti SC"), local("STSong"), local("DK-SONGTI"); }
+.f-st { font-family: TS-SongTi, TS-Special, serif; }
+/* Font - size */
+.s-05 { font-size: 0.5em; }
+.s-06 { font-size: 0.6em; }
+.s-07 { font-size: 0.7em; }
+.s-08 { font-size: 0.8em; }
+.s-09 { font-size: 0.9em; }
+.s-11 { font-size: 1.1em; }
+.s-12 { font-size: 1.2em; }
+.s-13 { font-size: 1.3em; }
+.s-14 { font-size: 1.4em; }
+.s-15 { font-size: 1.5em; }
+/* Font - style */
+.bold { font-weight: bold; }
+.italic { font-style: italic; }
+.underline { text-decoration: underline; }
+/* Paragraph */
+.title_page p, .information p, .color_page p { line-height: 1; }
+.introduction p, .interleaf p, .preface p, .chapter p, .postscript p, .feature p { text-indent: 2em; margin: 0.5em auto; }
+.chapter .separator { text-indent: 0em; text-align: center; margin: 1.2em auto; }
+.information .separator { padding-bottom: 0.25em; margin-bottom: 0.25em; border-bottom: 0.1em solid black; }
+.contents .list { font-size: 1.1em; line-height: 1.2; padding: 0 5%; }
+.contents .list a { color: DimGray; text-decoration: underline; }
+.contents ul.list li, .contents ol.list li { margin: 0.5em auto; }
+.contents table.list { border-spacing: 0.1em 0.5em; }
+/* Compose - illus */
+.illus.single { margin: 0 0; }
+.illus.top { margin: 0 0 1.5em 0; }
+.illus.bottom { margin: 1.5em 0 0 0; }
+.illus.inset { margin: 1.5em 0; }
+/* Compose - display */
+.d-inblock { display: inline-block; }
+.d-table { display: table; }
+.d-cell { display: table-cell; }
+.d-block { display: block; }
+.d-inline { display: inline; }
+.d-item { display: list-item; }
+/* Compose - align */
+.t-left { text-align: left; text-indent: 0em; }
+.t-right { text-align: right; text-indent: 0em; }
+.t-center { text-align: center; text-indent: 0em; }
+.v-super { vertical-align: super; }
+.v-sub { vertical-align: sub; }
+.v-text { vertical-align: text-bottom; }
+.v-top { vertical-align: top; }
+.v-bottom { vertical-align: bottom; }
+.p-middle { margin-top: 35%; }
+.p-center { margin-left: auto; margin-right: auto; }
+/* Compose - indent */
+.i-00 { text-indent: 0em; }
+.i-10 { text-indent: 1em; }
+.i-20 { text-indent: 2em; }
+.i-30 { text-indent: 3em; }
+.i-40 { text-indent: 4em; }
+/* Compose - color */
+.c-purple { color: BlueViolet; }
+.c-green { color: SeaGreen; }
+.c-red { color: Crimson; }
+.c-yellow { color: GoldenRod; }
+.c-blue { color: CornflowerBlue; }
+/* Compose - float */
+.left { float: left; }
+.right { float: right; text-align: left; }
+.clear { clear: both; }
+/* Compose - width & height */
+.w-100 { width: 100%; }
+.w-050 { width: 50%; }
+.h-100 { height: 100%; }
+.h-050 { height: 50%; }
+/* Endnote */
+.endnote-goto { color: grey; vertical-align: top; font-size: 0.8em; }
+.endnote-goto img { width: 1em; }
+.endnote-border { width: 50%; border-top: 0.1em solid grey; }
+.endnote-list { margin-top: 0.5em; }
+.endnote-list li { color: grey; font-size: 0.8em; line-height: 1.2; }
+.endnote-list a { color: grey; }
+/* Ruby */
+ruby, .ruby-center { ruby-align: center; }
+.ruby-left { ruby-align: left; }
+.ruby-right { ruby-align: right; }
+.ruby-space { ruby-align: distribute-space; }
+/* Writing Modes */
+.wm-vrl { writing-mode: vertical-rl; -webkit-writing-mode: vertical-rl; -epub-writing-mode: vertical-rl; }
+.wm-vlr { writing-mode: vertical-lr; -webkit-writing-mode: vertical-lr; -epub-writing-mode: vertical-lr; }
+.wm-ltr { direction: ltr; }
+.wm-rtl { direction: rtl; }
