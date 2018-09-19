@@ -1,24 +1,32 @@
 @charset "UTF-8";
-/*! ePub CSS, TL2-Signature, by 两仪天心&轻亦之间, version_3.0.0 */
+/*! ePub CSS, TL2-Signature, by 两仪天心&轻亦之间, v3.1.1 */
 /* Overall */
+@font-face { font-family: "org"; src: url("../Fonts/org.ttf") format("truetype"); }
+@font-face { font-family: "group"; src: url("../Fonts/group.ttf") format("truetype"); }
 @font-face { font-family: "team"; src: url("../Fonts/team.ttf") format("truetype"); }
-@font-face { font-family: "ctb"; src: url("../Fonts/ctb.ttf") format("truetype"); }
-/* Sig1 - LKepub Type1 */
-@font-face { font-family: "sig1-org"; src: url("../Fonts/sig1-org.ttf") format("truetype"); }
-@font-face { font-family: "sig1-group"; src: url("../Fonts/sig1-group.ttf") format("truetype"); }
-@font-face { font-family: "sig1-maker"; src: url("../Fonts/sig1-maker.ttf") format("truetype"); }
-.sig1 { width: 16em; max-width: 100%; padding: 5%; page-break-inside: avoid; break-inside: avoid; margin: auto; }
-.sig1 > .col-right { float: right; width: 40%; padding: 1.5em 0 1.5em 2.5%; border-left: thick double black; margin-left: 5%; }
-.sig1 > .col-right > .org { float: left; width: 1em; font-family: sig1-org, Yuan, sans-serif; font-size: 3em; line-height: 1; }
-.sig1 > .col-right > .org > p { width: 1em; height: 1em; }
-.sig1 > .col-right > .space { height: 5.8em; }
-.sig1 > .col-right > .group { float: left; width: 1em; font-family: sig1-group, Hei, sans-serif; font-size: 2em; line-height: 1; padding: 0.5em 0; }
-.sig1 > .col-right > .group > p { -o-transform: rotate(90deg); -ms-transform: rotate(90deg); -moz-transform: rotate(90deg); -webkit-transform: rotate(90deg); transform: rotate(90deg); margin: -0.5em 0; width: 1em; height: 1em; }
-.sig1 > .col-left { width: 50%; padding: 1em 0 0 0; text-align: right !important; }
-.sig1 > .col-left > .team { font-family: team, Kai, serif; font-size: 2em; line-height: 1; padding-top: 0.25em; padding-bottom: 0.5em; border-bottom: thin solid black; }
-.sig1 > .col-left > .maker { font-family: sig1-maker, Hei, sans-serif; font-size: 1.25em; line-height: 1; padding-top: 0.5em; }
-.sig1 > .col-left > .maker > .line-1, .sig1 > .col-left > .maker > .line-2 { float: right; width: 1em; }
-.sig1 > .col-left > .maker > .line-1 > p, .sig1 > .col-left > .maker > .line-2 > p { width: 1em; height: 1em; }
-.sig1 > .col-left > .maker > .line-1 { margin: 0 0 -4em 0.1em; border-left: thin solid black; padding: 0.5em 0 2.5em 0.1em; }
-.sig1 > .col-left > .maker > .line-2 { padding-top: 1.5em; }
-.sig1 > .col-left > .contributor { font-family: ctb, Song, serif; font-size: 1.25em; padding: 0.5em 0; }
+@font-face { font-family: "maker"; src: url("../Fonts/maker.ttf") format("truetype"); }
+@font-face { font-family: "source"; src: url("../Fonts/source.ttf") format("truetype"); }
+/* Lattice - biserial, separated, v2.1.1 */
+.information .lattice { width: 16em; padding: 5%; margin: auto; }
+.information .lattice > .col-right { float: right; width: 40%; padding: 1.5em 0 1.5em 2.5%; border-left: thick double black; margin-left: 5%; }
+.information .lattice > .col-right > .org { float: left; width: 1em; font-family: org, Yuan, sans-serif; font-size: 3em; line-height: 1; }
+.information .lattice > .col-right > .org > p { width: 1em; height: 1em; }
+.information .lattice > .col-right > .space { height: 5.8em; }
+.information .lattice > .col-right > .group { float: left; width: 1em; font-family: group, Hei, sans-serif; font-size: 2em; line-height: 1; padding: 0.5em 0; }
+.information .lattice > .col-right > .group > p { -o-transform: rotate(90deg); -ms-transform: rotate(90deg); -moz-transform: rotate(90deg); -webkit-transform: rotate(90deg); transform: rotate(90deg); margin: -0.5em 0; width: 1em; height: 1em; }
+.information .lattice > .col-left { width: 50%; padding: 1em 0 0 0; text-align: right !important; }
+.information .lattice > .col-left > .team { font-family: team, Kai, serif; font-size: 2em; line-height: 1; padding-top: 0.25em; padding-bottom: 0.5em; border-bottom: thin solid black; }
+.information .lattice > .col-left > .maker { font-family: maker, Hei, sans-serif; font-size: 1.25em; line-height: 1; padding-top: 0.5em; }
+.information .lattice > .col-left > .maker > .line-1, .lattice > .col-left > .maker > .line-2 { float: right; width: 1em; }
+.information .lattice > .col-left > .maker > .line-1 > p, .lattice > .col-left > .maker > .line-2 > p { width: 1em; height: 1em; }
+.information .lattice > .col-left > .maker > .line-1 { margin: 0 0 -4em 0.1em; border-left: thin solid black; padding: 0.5em 0 2.5em 0.1em; }
+.information .lattice > .col-left > .maker > .line-2 { padding-top: 1.5em; }
+.information .lattice > .col-left > .source { font-family: source, Song, serif; font-size: 1.25em; padding: 0.5em 0; }
+/* Classic  - logo, listed, v1.0.0 */
+.information .classic { width: 30em; padding: 5%; margin: 10% auto; }
+.information .classic > .team { text-align: right !important; margin: 0 5%; font-family: team, Yuan, sans-serif; text-decoration: underline; }
+.information .classic > .logo { max-height: 10em; text-align: center !important; margin: auto; }
+.information .classic > .contributer { text-align: right !important; margin: 5% 5% 0 10%; }
+.information .classic > .contributer > .item { font-family: Hei, sans-serif; font-size: 0.5em; color: white; padding-right: 0.25em; height: 3em; margin-top: 1em; margin-bottom: -3.1em; }
+.information .classic .source { font-family: source, Yuan, sans-serif; margin-left: 25%; padding-right: 0.25em; border-right: 0.75em solid black; border-bottom: medium solid black; }
+.information .classic .maker { font-family: maker, Kai, serif; padding-right: 0.25em; border-right: 0.75em solid black; border-bottom: medium solid black; }
