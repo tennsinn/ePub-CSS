@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*! ePub CSS, TL2-Standard, by 两仪天心&轻亦之间, v3.0.2 */
+/*! ePub CSS, TL2-Standard, by 两仪天心&轻亦之间, v3.0.3 */
 /* Text - wrap */
 .wrap-no { white-space: nowrap; }
 .wrap-nom { word-wrap: normal; overflow-wrap: normal; }
@@ -745,7 +745,7 @@ p.i-n4e, .i-n4e p { text-indent: -4em; padding-left: 4em; }
 .cornflowerblue { color: cornflowerblue; }
 .mediumaquamarine { color: mediumaquamarine; }
 .dimgrey { color: dimgrey; }
-.steelblue { color: steelblue; }
+.slateblue { color: slateblue; }
 .olivedrab { color: olivedrab; }
 .slategrey { color: slategrey; }
 .lightslategrey { color: lightslategrey; }
