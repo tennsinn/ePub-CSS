@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*! ePub CSS, TL2-Standard, by 两仪天心&轻亦之间, v3.0.3 */
+/*! ePub CSS, TL2-Standard, by 两仪天心&轻亦之间, v3.0.4 */
 /* Text - wrap */
 .wrap-no { white-space: nowrap; }
 .wrap-nom { word-wrap: normal; overflow-wrap: normal; }
@@ -17,16 +17,23 @@ p.i-n3e, .i-n3e p { text-indent: -3em; padding-left: 3em; }
 p.i-n4e, .i-n4e p { text-indent: -4em; padding-left: 4em; }
 /* Font - size */
 .s-0e1 { font-size: 0.1em; }
+.s-0e15 { font-size: 0.15em; }
 .s-0e2 { font-size: 0.2em; }
 .s-0e25 { font-size: 0.25em; }
 .s-0e3 { font-size: 0.3em; }
+.s-0e35 { font-size: 0.35em; }
 .s-0e4 { font-size: 0.4em; }
+.s-0e45 { font-size: 0.45em; }
 .s-0e5 { font-size: 0.5em; }
+.s-0e55 { font-size: 0.55em; }
 .s-0e6 { font-size: 0.6em; }
+.s-0e65 { font-size: 0.65em; }
 .s-0e7 { font-size: 0.7em; }
 .s-0e75 { font-size: 0.75em; }
 .s-0e8 { font-size: 0.8em; }
+.s-0e85 { font-size: 0.85em; }
 .s-0e9 { font-size: 0.9em; }
+.s-0e95 { font-size: 0.95em; }
 .s-1e1 { font-size: 1.1em; }
 .s-1e2 { font-size: 1.2em; }
 .s-1e25 { font-size: 1.25em; }
@@ -703,6 +710,12 @@ p.i-n4e, .i-n4e p { text-indent: -4em; padding-left: 4em; }
 .rot-n75d { -o-transform: rotate(-75deg); -ms-transform: rotate(-75deg); -moz-transform: rotate(-75deg); -webkit-transform: rotate(-75deg); transform: rotate(-75deg); }
 .rot-n90d { -o-transform: rotate(-90deg); -ms-transform: rotate(-90deg); -moz-transform: rotate(-90deg); -webkit-transform: rotate(-90deg); transform: rotate(-90deg); }
 /* Transform - skew */
+.skew-Xp10d { transform: skew(0,10deg); -o-transform: skewX(10deg); -ms-transform: skewX(10deg); -moz-transform: skewX(10deg); -webkit-transform: skewX(10deg); }
+.skew-Xp15d { transform: skew(0,15deg); -o-transform: skewX(15deg); -ms-transform: skewX(15deg); -moz-transform: skewX(15deg); -webkit-transform: skewX(15deg); }
+.skew-Xp20d { transform: skew(0,20deg); -o-transform: skewX(20deg); -ms-transform: skewX(20deg); -moz-transform: skewX(20deg); -webkit-transform: skewX(20deg); }
+.skew-Xn10d { transform: skew(0,-10deg); -o-transform: skewX(-10deg); -ms-transform: skewX(-10deg); -moz-transform: skewX(-10deg); -webkit-transform: skewX(-10deg); }
+.skew-Xn15d { transform: skew(0,-15deg); -o-transform: skewX(-15deg); -ms-transform: skewX(-15deg); -moz-transform: skewX(-15deg); -webkit-transform: skewX(-15deg); }
+.skew-Xn20d { transform: skew(0,-20deg); -o-transform: skewX(-20deg); -ms-transform: skewX(-20deg); -moz-transform: skewX(-20deg); -webkit-transform: skewX(-20deg); }
 .skew-Yp10d { transform: skewX(10deg); -o-transform: skewY(10deg); -ms-transform: skewY(10deg); -moz-transform: skewY(10deg); -webkit-transform: skewY(10deg); }
 .skew-Yp15d { transform: skewX(15deg); -o-transform: skewY(15deg); -ms-transform: skewY(15deg); -moz-transform: skewY(15deg); -webkit-transform: skewY(15deg); }
 .skew-Yp20d { transform: skewX(20deg); -o-transform: skewY(20deg); -ms-transform: skewY(20deg); -moz-transform: skewY(20deg); -webkit-transform: skewY(20deg); }
