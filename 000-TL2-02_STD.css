@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*! ePub CSS, TL2-Standard, by 两仪天心&轻亦之间, v3.0.4 */
+/*! ePub CSS, TL2-Standard, by 两仪天心&轻亦之间, v3.0.5 */
 /* Text - wrap */
 .wrap-no { white-space: nowrap; }
 .wrap-nom { word-wrap: normal; overflow-wrap: normal; }
@@ -131,6 +131,16 @@ p.i-n4e, .i-n4e p { text-indent: -4em; padding-left: 4em; }
 .w-18e { width: 18em; }
 .w-19e { width: 19em; }
 .w-20e { width: 20em; }
+.w-21e { width: 21em; }
+.w-22e { width: 22em; }
+.w-23e { width: 23em; }
+.w-24e { width: 24em; }
+.w-25e { width: 25em; }
+.w-26e { width: 26em; }
+.w-27e { width: 27em; }
+.w-28e { width: 28em; }
+.w-29e { width: 29em; }
+.w-30e { width: 30em; }
 /* Height - em */
 .h-0e25 { height: 0.25em; }
 .h-0e5 { height: 0.5em; }
