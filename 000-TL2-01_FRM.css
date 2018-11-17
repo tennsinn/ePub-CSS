@@ -1,6 +1,6 @@
 @charset "UTF-8";
-/*! ePub-CSS v3.3.2, TL2-Onekey, by 两仪天心&轻亦之间 */
-/*! ePub CSS, TL2-Framework, by 两仪天心&轻亦之间, v3.2.2 */
+/*! ePub-CSS v3.4.2, TL2-Onekey, by 两仪天心&轻亦之间 */
+/*! ePub CSS, TL2-Framework v3.3.1, by 两仪天心&轻亦之间 */
 /* Define */
 @namespace epub "http://www.idpf.org/2007/ops";
 @page { margin: 0; padding: 0; border: none; }
@@ -41,18 +41,19 @@ center, .c .center { text-align: center; }
 /* Format - section */
 body > section, body > .section { duokan-bleed: leftright; overflow: visible; margin: 0 auto; width: 100%; }
 .epigraph { padding-top: 40%; }
+.color_page .section, .flyleaf .section { margin-top: 1.5em; }
 /* Format - pragraph */
-.introduction, .interleaf, .preface, .chapter, .afterword, .feature { text-indent: 2em; }
-.introduction p, .interleaf p, .epigraph p, .preface p, .chapter p, .afterword p, .feature p { margin: 0.5em 5%; }
+.introduction, .interleaf, .preface, .chapter, .afterword, .feature, .foreshow { text-indent: 2em; }
+.introduction p, .interleaf p, .flyleaf p, .epigraph p, .preface p, .chapter p, .afterword p, .feature p, .foreshow p { margin: 0.5em 5%; }
 .appendix p, .color_page p { margin: 0.25em 5%; }
 h3 p, .h3 p { margin: 0; }
 /* Format - font */
-.f-dflt { font-family: DFLT, SP, sans-serif; }
-.f-sp { font-family: SP, sans-serif; }
-.f-ht { font-family: Hei, SP, sans-serif; }
-.f-yt { font-family: Yuan, SP, sans-serif; }
-.f-kt { font-family: Kai, SP, serif; }
-.f-st { font-family: Song, SP, serif; }
+.f-dflt { font-family: DFLT, SP, sans-serif !important; }
+.f-sp { font-family: SP, sans-serif !important; }
+.f-ht { font-family: Hei, SP, sans-serif !important; }
+.f-yt { font-family: Yuan, SP, sans-serif !important; }
+.f-kt { font-family: Kai, SP, serif !important; }
+.f-st { font-family: Song, SP, serif !important; }
 .aut { font-family: aut, Song, SP, serif; }
 .ill { font-family: ill, Song, SP, serif; }
 .trl { font-family: trl, Song, SP, serif; }
