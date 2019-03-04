@@ -1,7 +1,7 @@
 @charset "UTF-8";
-/*! ePub-CSS v3.4.6, TL2-Onekey, by 两仪天心&轻亦之间 */
-/*! ePub CSS, TL2-Framework v3.3.2, by 两仪天心&轻亦之间 */
-/* Define */
+/*! ePub-CSS v3.5.0, TL2-Onekey, by 两仪天心&轻亦之间 */
+/*! ePub CSS, TL2-Framework v3.4.0, by 两仪天心&轻亦之间 */
+/*@ Define */
 @namespace epub "http://www.idpf.org/2007/ops";
 @page { margin: 0; padding: 0; border: none; }
 @font-face { font-family: "DFLT"; src: local("微软雅黑"), local("STYuan"), local("DK-HEITI"); }
@@ -18,7 +18,7 @@
 @font-face { font-family: "conttitle"; src: url("../Fonts/conttitle.ttf") format("truetype"); }
 @font-face { font-family: "contents"; src: url("../Fonts/contents.ttf") format("truetype"); }
 @font-face { font-family: "subcont"; src: url("../Fonts/subcont.ttf") format("truetype"); }
-/* Reset */
+/*@ Reset */
 * { margin: 0; padding: 0; border: none; max-width: 100%; }
 body { font-family: DFLT, SP, sans-serif; font-size: 1em; line-height: 1.2; text-indent: 0; vertical-align: baseline; background: transparent; word-spacing: normal; letter-spacing: normal; white-space: normal; word-wrap: break-word; overflow-wrap: break-word; text-align: left; -moz-text-align-last: auto; -webkit-text-align-last: auto; -epub-text-align-last: auto; text-align-last: auto; -webkit-line-break: auto; -epub-line-break: auto; line-break: auto; -webkit-word-break: break-all; -epub-word-break: break-all; word-break: break-all; hanging-punctuation: first allow-end last; -ms-hyphens: auto; -moz-hyphens: auto; -webkit-hyphens: auto; -epub-hyphens: auto; hyphens: auto; -webkit-text-underline-position: under left; -epub-text-underline-position: under left; text-underline-position: under left; overflow: visible; }
 h1, .h1 { font-family: title, Song, SP, serif; font-weight: normal; font-size: 2.5em; line-height: 1; text-indent: 0em; }
@@ -36,18 +36,18 @@ b, .b, .bold { font-weight: bold; }
 i, .i, .italic { font-style: italic; }
 u, .u, .underline { text-decoration: underline; }
 center, .c .center { text-align: center; }
-/* Reset - IE Edge */
+/*@ Reset - IE Edge */
 :root:not(.bookcontent-fixed) p { text-align: inherit; }
-/* Format - section */
+/*@ Format - section */
 body > section, body > .section { duokan-bleed: leftright; overflow: visible; margin: 0 auto; width: 100%; }
 .epigraph { padding-top: 40%; }
 .color_page .section, .flyleaf .section { margin-top: 1.5em; }
-/* Format - pragraph */
+/*@ Format - pragraph */
 .introduction, .interleaf, .preface, .chapter, .afterword, .feature, .foreshow { text-indent: 2em; }
 .introduction p, .interleaf p, .flyleaf p, .epigraph p, .preface p, .chapter p, .afterword p, .feature p, .foreshow p { margin: 0.5em 5%; }
 .appendix p, .color_page p { margin: 0.25em 5%; }
 h3 p, .h3 p { margin: 0; }
-/* Format - font */
+/*@ Format - font */
 .f-dflt { font-family: DFLT, SP, sans-serif !important; }
 .f-sp { font-family: SP, sans-serif !important; }
 .f-ht { font-family: Hei, SP, sans-serif !important; }
@@ -61,12 +61,12 @@ h3 p, .h3 p { margin: 0; }
 .contents h3, .contents .h3 { font-family: conttitle, Hei, SP, sans-serif; }
 .contents ol, .chapter h3, .chapter .h3, .feature h3, .feature .h3 { font-family: contents, Song, SP, sans-serif; }
 .chapter h4, .chapter .h4, .feature h4, .feature .h4 { font-family: subcont, Song, SP, sans-serif; }
-/* Components - page */
+/*@ Components - page */
 .page-med { width: 20em; margin: auto; }
 .page-full { text-indent: 0; width: 100%; height: 100vh; page-break-inside: avoid; break-inside: avoid; display: flex; display: -webkit-flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center; }
 .page-full > * { margin: auto; }
 html.page-one, html.page-one > body, html.page-one > body > section, html.page-one > body > .section { height: 100%; }
-/* Components - line */
+/*@ Components - line */
 p.line-h, .line-h p { line-height: 1; height: 1em; white-space: nowrap; }
 p.line-hc, .line-hc p { line-height: 1; height: 1em; white-space: nowrap; text-align: center !important; margin-left: auto; margin-right: auto; }
 p.line-hr, .line-hr p { line-height: 1; height: 1em; white-space: nowrap; text-align: right !important; margin-left: auto; margin-right: 0; }
@@ -88,61 +88,70 @@ p.line-cps-0e5, .line-cps-0e5 p { margin-top: -0.5em; margin-bottom: -0.5em; }
 p.line-eps-0e1, .line-eps-0e1 p { margin-top: 0.1em; margin-bottom: 0.1em; }
 p.line-eps-0e25, .line-eps-0e25 p { margin-top: 0.25em; margin-bottom: 0.25em; }
 p.line-eps-0e5, .line-eps-0e5 p { margin-top: 0.5em; margin-bottom: 0.5em; }
-/* Components - pre */
+/*@ Components - pre */
 .pre-box { margin-left: 5%; margin-right: 5%; border: thin solid black; }
 .pre-small { font-size: 0.8em; text-indent: 0; text-align: center !important; }
-/* Components - infobox */
+/*@ Components - infobox */
 .infobox { font-size: 1em; line-height: 1.1; text-indent: 0; margin-left: 2%; margin-right: 2%; }
 .infobox p { padding-left: 3%; padding-right: 3%; }
+/*# .infobox p:first-child */
 .infobox p.top { padding-top: 0.25em; margin-top: 0.25em; border-top: thin solid black; }
+/*# .infobox p:last-child */
 .infobox p.bottom { padding-bottom: 0.25em; border-bottom: thin solid black; }
-/* Components - introdl */
+/*@ Components - introdl */
 .introdl { font-size: 1em; line-height: 1.1; }
 .introdl dt, .introdl p.dt { font-family: Kai, SP, serif; text-indent: 0em; margin-top: 1em; margin: 1em 5% 0 5%; }
 .introdl dt span, .introdl p.dt span { font-family: Song, SP, serif; font-size: 0.7em; color: grey; }
 .introdl dd, .introdl p.dd { text-indent: 2em; margin: 0.5em 5%; }
-/* Components - list - standard left, normal normal */
+/*@ Components - list - standard left, normal normal */
 .list-sl-nn { font-size: 1.1em; line-height: 1.1; text-align: left !important; margin: 0 auto; }
 .list-sl-nn > li { margin-top: 1em; }
 .list-sl-nn a { color: dimgray; }
-/* Components - list - standard left, normal underline */
+/*@ Components - list - standard left, normal underline */
 .list-sl-nu { font-size: 1.1em; line-height: 1.1; text-align: left !important; margin: 0 auto; }
 .list-sl-nu > li { margin-top: 1em; }
 .list-sl-nu a { color: dimgray; text-decoration: underline; }
-/* Components - list - standard center, relax normal */
+/*@ Components - list - standard center, relax normal */
 .list-sc-rn { font-size: 1.1em; line-height: 1.1; text-align: center !important; margin: auto; }
 .list-sc-rn > li { margin-top: 1.5em; }
 .list-sc-rn a { color: dimgray; text-decoration: none; }
-/* Components - list - standard center, normal normal */
+/*@ Components - list - standard center, normal normal */
 .list-sc-nn { font-size: 1.1em; line-height: 1.1; text-align: center !important; margin: auto; }
 .list-sc-nn > li { margin-top: 1em; }
 .list-sc-nn a { color: dimgray; text-decoration: none; }
-/* Components - list - standard center, relax border, bottom dotted */
+/*@ Components - list - standard center, relax border, bottom dotted */
 .list-sc-rb-bd { font-size: 1.1em; line-height: 1.2; text-align: center !important; margin: auto; }
 .list-sc-rb-bd > li { margin-top: 1.5em; padding: 0 0.25em 0.5em 0.25em; border-bottom: medium dotted; }
 .list-sc-rb-bd a { color: dimgray; text-decoration: none; }
-/* Components - list - vertical right, normal normal */
+/*@ Components - list - vertical right, normal normal */
 .list-vr-nn { font-size: 1.1em; line-height: 1; page-break-inside: avoid; break-inside: avoid; }
 .list-vr-nn > li { float: right; text-align: center !important; width: 1em; padding: 0 0.5em; }
-/* Components - endnote */
+/*@ Components - endnote */
+/*# [epub|type=noteref] */
 .en-ref { color: grey; text-decoration: underline; vertical-align: top; font-size: 0.75em; }
+/*# [epub|type=noteref] > img */
 .en-ref > img { width: 1em; }
 footer, .footer { margin: 3em 2% 0 2%; text-indent: 0em; }
+/*# [epub|type=endnotes] */
 .endnotes { margin: 0.5em 3%; }
+/*# [epub|type=endnotes] li */
 .endnotes li { color: grey; font-size: 0.8em; line-height: 1.2; margin: 0.25em 0; }
+/*# [epub|type=endnote] a */
 .endnote a { color: grey; text-decoration: underline; }
-/* Components - separator */
+/*@ Components - separator */
 p.spr { text-indent: 0em; text-align: center !important; margin: 0; }
 h3 ~ p.spr, .h3 ~ p.spr { margin: 1.5em 0; }
 h4 ~ p.spr, .h4 ~ p.spr { margin: 1em 0; }
 .spr-endnotes { width: 50%; border-top: thin solid grey; }
-/* Components - illus */
+/*@ Components - illus */
+/*# [epub|type=figure] */
 .illus { text-indent: 0; text-align: center !important; width: 100%; height: 100vh; page-break-inside: avoid; break-inside: avoid; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center; }
+/*# [epub|type=figure] > * */
 .illus > * { margin: auto; }
-/* Components - shape */
+/*@ Components - shape */
 .roundrect { padding: 0.25em; border-radius: 0.5em; }
 .circle { border-radius: 50%; }
-/* Components - shape - rhombus */
+/*@ Components - shape - rhombus */
 .rhombus { width: 1em; margin: 0.25em auto; }
 .rhombus > div { height: 0; width: 0; margin: 0 auto; border: 0.5em solid transparent; }
 .rhombus > .up1 { border-top: 0em solid transparent; border-bottom: 0.5em solid; }
@@ -153,6 +162,6 @@ h4 ~ p.spr, .h4 ~ p.spr { margin: 1em 0; }
 .rhombus > .down2 { border-top: 0.5em solid; border-bottom: 0em solid transparent; }
 .rhombus > .right1 { border-top: 0em solid transparent; border-bottom: 0.5em solid; border-left: 2em solid transparent; }
 .rhombus > .right2 { border-top: 0.5em solid; border-bottom: 0em solid transparent; border-left: 2em solid transparent; }
-/* Components - container - rhombus */
+/*@ Components - container - rhombus */
 .rhombus-box { margin: 1em auto; -o-transform: rotate(45deg); -ms-transform: rotate(45deg); -moz-transform: rotate(45deg); -webkit-transform: rotate(45deg); transform: rotate(45deg); }
 .rhombus-box > .in { margin: auto; -o-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -webkit-transform: rotate(-45deg); transform: rotate(-45deg); }
