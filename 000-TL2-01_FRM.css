@@ -1,6 +1,6 @@
 @charset "UTF-8";
-/*! ePub-CSS v3.5.0, TL2-Onekey, by 两仪天心&轻亦之间 */
-/*! ePub CSS, TL2-Framework v3.4.0, by 两仪天心&轻亦之间 */
+/*! ePub-CSS v3.5.4, TL2-Onekey, by 两仪天心&轻亦之间 */
+/*! ePub CSS, TL2-Framework v3.4.3, by 两仪天心&轻亦之间 */
 /*@ Define */
 @namespace epub "http://www.idpf.org/2007/ops";
 @page { margin: 0; padding: 0; border: none; }
@@ -24,7 +24,7 @@ body { font-family: DFLT, SP, sans-serif; font-size: 1em; line-height: 1.2; text
 h1, .h1 { font-family: title, Song, SP, serif; font-weight: normal; font-size: 2.5em; line-height: 1; text-indent: 0em; }
 h2, .h2 { font-family: subtitle, Song, SP, serif; font-weight: normal; font-size: 2em; line-height: 1; text-indent: 0em; }
 h3, .h3 { font-family: Hei, SP, sans-serif; font-weight: normal; font-size: 1.35em; line-height: 1; text-align: center !important; margin: 1.5em 0; text-indent: 0em; }
-h4, .h4 { font-family: Kai, SP, serif; font-weight: normal; font-size: 1.2em; line-height: 1; text-align: center !important; margin: 1.25em 0; text-indent: 0em; }
+h4, .h4 { font-family: Kai, SP, serif; font-weight: normal; font-size: 1.2em; line-height: 1; text-align: center !important; margin: 1.5em 0 1.25em 0; text-indent: 0em; }
 h5, .h5 { font-family: DFLT, SP, sans-serif; font-weight: normal; font-size: 1.1em; line-height: 1; text-align: center !important; text-indent: 0em; }
 ol, ul, li { list-style: none; }
 table, .t, .table { display: table; margin-left: auto; margin-right: auto; }
@@ -43,10 +43,9 @@ body > section, body > .section { duokan-bleed: leftright; overflow: visible; ma
 .epigraph { padding-top: 40%; }
 .color_page .section, .flyleaf .section { margin-top: 1.5em; }
 /*@ Format - pragraph */
-.introduction, .interleaf, .preface, .chapter, .afterword, .feature, .foreshow { text-indent: 2em; }
-.introduction p, .interleaf p, .flyleaf p, .epigraph p, .preface p, .chapter p, .afterword p, .feature p, .foreshow p { margin: 0.5em 5%; }
-.appendix p, .color_page p { margin: 0.25em 5%; }
-h3 p, .h3 p { margin: 0; }
+.introduction section, .interleaf section, .preface section, .chapter section, .afterword section, .feature section, .foreshow section, .introduction .section, .interleaf .section, .preface .section, .chapter .section, .afterword .section, .feature .section, .foreshow .section { text-indent: 2em; }
+.introduction section p, .interleaf section p, .flyleaf section p, .epigraph section p, .preface section p, .chapter section p, .afterword section p, .feature section p, .foreshow section p, .introduction .section p, .interleaf .section p, .flyleaf .section p, .epigraph .section p, .preface .section p, .chapter .section p, .afterword .section p, .feature .section p, .foreshow .section p { margin: 0.5em 5%; }
+.appendix section p, .color_page section p, .appendix .section p, .color_page .section p { margin: 0.25em 5%; }
 /*@ Format - font */
 .f-dflt { font-family: DFLT, SP, sans-serif !important; }
 .f-sp { font-family: SP, sans-serif !important; }
@@ -63,6 +62,7 @@ h3 p, .h3 p { margin: 0; }
 .chapter h4, .chapter .h4, .feature h4, .feature .h4 { font-family: subcont, Song, SP, sans-serif; }
 /*@ Components - page */
 .page-med { width: 20em; margin: auto; }
+.page-wide { width: 30em; margin: auto; }
 .page-full { text-indent: 0; width: 100%; height: 100vh; page-break-inside: avoid; break-inside: avoid; display: flex; display: -webkit-flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center; }
 .page-full > * { margin: auto; }
 html.page-one, html.page-one > body, html.page-one > body > section, html.page-one > body > .section { height: 100%; }
@@ -140,7 +140,7 @@ footer, .footer { margin: 3em 2% 0 2%; text-indent: 0em; }
 .endnote a { color: grey; text-decoration: underline; }
 /*@ Components - separator */
 p.spr { text-indent: 0em; text-align: center !important; margin: 0; }
-h3 ~ p.spr, .h3 ~ p.spr { margin: 1.5em 0; }
+h3 ~ p.spr, .h3 ~ p.spr { margin: 1.25em 0; }
 h4 ~ p.spr, .h4 ~ p.spr { margin: 1em 0; }
 .spr-endnotes { width: 50%; border-top: thin solid grey; }
 /*@ Components - illus */
