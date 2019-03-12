@@ -1,6 +1,6 @@
 @charset "UTF-8";
-/*! ePub-CSS v3.5.4, TL2-Onekey, by 两仪天心&轻亦之间 */
-/*! ePub CSS, TL2-Framework v3.4.3, by 两仪天心&轻亦之间 */
+/*! ePub-CSS v3.5.5, TL2-Onekey, by 两仪天心&轻亦之间 */
+/*! ePub CSS, TL2-Framework v3.4.4, by 两仪天心&轻亦之间 */
 /*@ Define */
 @namespace epub "http://www.idpf.org/2007/ops";
 @page { margin: 0; padding: 0; border: none; }
@@ -44,8 +44,8 @@ body > section, body > .section { duokan-bleed: leftright; overflow: visible; ma
 .color_page .section, .flyleaf .section { margin-top: 1.5em; }
 /*@ Format - pragraph */
 .introduction section, .interleaf section, .preface section, .chapter section, .afterword section, .feature section, .foreshow section, .introduction .section, .interleaf .section, .preface .section, .chapter .section, .afterword .section, .feature .section, .foreshow .section { text-indent: 2em; }
-.introduction section p, .interleaf section p, .flyleaf section p, .epigraph section p, .preface section p, .chapter section p, .afterword section p, .feature section p, .foreshow section p, .introduction .section p, .interleaf .section p, .flyleaf .section p, .epigraph .section p, .preface .section p, .chapter .section p, .afterword .section p, .feature .section p, .foreshow .section p { margin: 0.5em 5%; }
-.appendix section p, .color_page section p, .appendix .section p, .color_page .section p { margin: 0.25em 5%; }
+.introduction section p, .interleaf section p, .flyleaf section p, .epigraph section p, .preface section p, .chapter section p, .afterword section p, .feature section p, .foreshow section p, .introduction .section p, .interleaf .section p, .flyleaf .section p, .epigraph .section p, .preface .section p, .chapter .section p, .afterword .section p, .feature .section p, .foreshow .section p { margin: 0.5em 0.5em; }
+.appendix section p, .color_page section p, .appendix .section p, .color_page .section p { margin: 0.25em 0.5em; }
 /*@ Format - font */
 .f-dflt { font-family: DFLT, SP, sans-serif !important; }
 .f-sp { font-family: SP, sans-serif !important; }
@@ -89,20 +89,20 @@ p.line-eps-0e1, .line-eps-0e1 p { margin-top: 0.1em; margin-bottom: 0.1em; }
 p.line-eps-0e25, .line-eps-0e25 p { margin-top: 0.25em; margin-bottom: 0.25em; }
 p.line-eps-0e5, .line-eps-0e5 p { margin-top: 0.5em; margin-bottom: 0.5em; }
 /*@ Components - pre */
-.pre-box { margin-left: 5%; margin-right: 5%; border: thin solid black; }
+.pre-box { margin-left: 0.5em; margin-right: 0.5em; border: thin solid black; }
 .pre-small { font-size: 0.8em; text-indent: 0; text-align: center !important; }
 /*@ Components - infobox */
-.infobox { font-size: 1em; line-height: 1.1; text-indent: 0; margin-left: 2%; margin-right: 2%; }
-.infobox p { padding-left: 3%; padding-right: 3%; }
+.infobox { font-size: 1em; line-height: 1.1; text-indent: 0; margin-left: 0.5em; margin-right: 0.5em; }
+.infobox p { padding-left: 0.75em; padding-right: 0.75em; }
 /*# .infobox p:first-child */
-.infobox p.top { padding-top: 0.25em; margin-top: 0.25em; border-top: thin solid black; }
+.infobox p.top { padding-top: 0.5em; margin-top: 0.5em; border-top: thin solid black; }
 /*# .infobox p:last-child */
-.infobox p.bottom { padding-bottom: 0.25em; border-bottom: thin solid black; }
+.infobox p.bottom { padding-bottom: 0.5em; border-bottom: thin solid black; }
 /*@ Components - introdl */
 .introdl { font-size: 1em; line-height: 1.1; }
-.introdl dt, .introdl p.dt { font-family: Kai, SP, serif; text-indent: 0em; margin-top: 1em; margin: 1em 5% 0 5%; }
+.introdl dt, .introdl p.dt { font-family: Kai, SP, serif; text-indent: 0em; margin-top: 1em; margin: 1em 0.5em 0 0.5em; }
 .introdl dt span, .introdl p.dt span { font-family: Song, SP, serif; font-size: 0.7em; color: grey; }
-.introdl dd, .introdl p.dd { text-indent: 2em; margin: 0.5em 5%; }
+.introdl dd, .introdl p.dd { text-indent: 2em; margin: 0.5em 0.5em; }
 /*@ Components - list - standard left, normal normal */
 .list-sl-nn { font-size: 1.1em; line-height: 1.1; text-align: left !important; margin: 0 auto; }
 .list-sl-nn > li { margin-top: 1em; }
@@ -131,9 +131,9 @@ p.line-eps-0e5, .line-eps-0e5 p { margin-top: 0.5em; margin-bottom: 0.5em; }
 .en-ref { color: grey; text-decoration: underline; vertical-align: top; font-size: 0.75em; }
 /*# [epub|type=noteref] > img */
 .en-ref > img { width: 1em; }
-footer, .footer { margin: 3em 2% 0 2%; text-indent: 0em; }
+footer, .footer { margin: 3em 0.5em 0 0.5em; text-indent: 0em; }
 /*# [epub|type=endnotes] */
-.endnotes { margin: 0.5em 3%; }
+.endnotes { margin: 0.5em 0.75em; }
 /*# [epub|type=endnotes] li */
 .endnotes li { color: grey; font-size: 0.8em; line-height: 1.2; margin: 0.25em 0; }
 /*# [epub|type=endnote] a */
