@@ -1,6 +1,6 @@
 @charset "UTF-8";
-/*! ePub-CSS v3.5.5, TL2-Onekey, by 两仪天心&轻亦之间 */
-/*! ePub CSS, TL2-Framework v3.4.4, by 两仪天心&轻亦之间 */
+/*! ePub-CSS v3.5.6, TL2-Onekey, by 两仪天心&轻亦之间 */
+/*! ePub CSS, TL2-Framework v3.4.5, by 两仪天心&轻亦之间 */
 /*@ Define */
 @namespace epub "http://www.idpf.org/2007/ops";
 @page { margin: 0; padding: 0; border: none; }
@@ -95,9 +95,9 @@ p.line-eps-0e5, .line-eps-0e5 p { margin-top: 0.5em; margin-bottom: 0.5em; }
 .infobox { font-size: 1em; line-height: 1.1; text-indent: 0; margin-left: 0.5em; margin-right: 0.5em; }
 .infobox p { padding-left: 0.75em; padding-right: 0.75em; }
 /*# .infobox p:first-child */
-.infobox p.top { padding-top: 0.5em; margin-top: 0.5em; border-top: thin solid black; }
+.infobox p.top { padding-top: 0.25em; margin-top: 0.25em; border-top: thin solid black; }
 /*# .infobox p:last-child */
-.infobox p.bottom { padding-bottom: 0.5em; border-bottom: thin solid black; }
+.infobox p.bottom { padding-bottom: 0.25em; border-bottom: thin solid black; }
 /*@ Components - introdl */
 .introdl { font-size: 1em; line-height: 1.1; }
 .introdl dt, .introdl p.dt { font-family: Kai, SP, serif; text-indent: 0em; margin-top: 1em; margin: 1em 0.5em 0 0.5em; }
