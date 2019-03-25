@@ -1,6 +1,6 @@
 @charset "UTF-8";
-/*! ePub-CSS v3.5.6, TL2-Onekey, by 两仪天心&轻亦之间 */
-/*! ePub CSS, TL2-Framework v3.4.5, by 两仪天心&轻亦之间 */
+/*! ePub-CSS v3.6.1, TL2-Onekey, by 两仪天心&轻亦之间 */
+/*! ePub CSS, TL2-Framework v3.5.0, by 两仪天心&轻亦之间 */
 /*@ Define */
 @namespace epub "http://www.idpf.org/2007/ops";
 @page { margin: 0; padding: 0; border: none; }
@@ -39,13 +39,13 @@ center, .c .center { text-align: center; }
 /*@ Reset - IE Edge */
 :root:not(.bookcontent-fixed) p { text-align: inherit; }
 /*@ Format - section */
-body > section, body > .section { duokan-bleed: leftright; overflow: visible; margin: 0 auto; width: 100%; }
+body > .section { duokan-bleed: leftright; overflow: visible; margin: 0 auto; width: 100%; }
 .epigraph { padding-top: 40%; }
-.color_page .section, .flyleaf .section { margin-top: 1.5em; }
+.color_page .section, .flyleaf .section, .appendix .section { margin-top: 1.5em; }
 /*@ Format - pragraph */
-.introduction section, .interleaf section, .preface section, .chapter section, .afterword section, .feature section, .foreshow section, .introduction .section, .interleaf .section, .preface .section, .chapter .section, .afterword .section, .feature .section, .foreshow .section { text-indent: 2em; }
-.introduction section p, .interleaf section p, .flyleaf section p, .epigraph section p, .preface section p, .chapter section p, .afterword section p, .feature section p, .foreshow section p, .introduction .section p, .interleaf .section p, .flyleaf .section p, .epigraph .section p, .preface .section p, .chapter .section p, .afterword .section p, .feature .section p, .foreshow .section p { margin: 0.5em 0.5em; }
-.appendix section p, .color_page section p, .appendix .section p, .color_page .section p { margin: 0.25em 0.5em; }
+.introduction .section, .interleaf .section, .preface .section, .chapter .section, .afterword .section, .feature .section, .foreshow .section { text-indent: 2em; }
+.introduction .section p, .interleaf .section p, .flyleaf .section p, .epigraph .section p, .preface .section p, .chapter .section p, .afterword .section p, .feature .section p, .foreshow .section p { margin: 0.5em 0.5em; }
+.color_page .section p, .flyleaf .section p, .appendix .section p { margin: 0.25em 0.5em; }
 /*@ Format - font */
 .f-dflt { font-family: DFLT, SP, sans-serif !important; }
 .f-sp { font-family: SP, sans-serif !important; }
@@ -65,7 +65,7 @@ body > section, body > .section { duokan-bleed: leftright; overflow: visible; ma
 .page-wide { width: 30em; margin: auto; }
 .page-full { text-indent: 0; width: 100%; height: 100vh; page-break-inside: avoid; break-inside: avoid; display: flex; display: -webkit-flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center; }
 .page-full > * { margin: auto; }
-html.page-one, html.page-one > body, html.page-one > body > section, html.page-one > body > .section { height: 100%; }
+html.page-one, html.page-one > body, html.page-one > body > .section { height: 100%; }
 /*@ Components - line */
 p.line-h, .line-h p { line-height: 1; height: 1em; white-space: nowrap; }
 p.line-hc, .line-hc p { line-height: 1; height: 1em; white-space: nowrap; text-align: center !important; margin-left: auto; margin-right: auto; }
@@ -92,12 +92,10 @@ p.line-eps-0e5, .line-eps-0e5 p { margin-top: 0.5em; margin-bottom: 0.5em; }
 .pre-box { margin-left: 0.5em; margin-right: 0.5em; border: thin solid black; }
 .pre-small { font-size: 0.8em; text-indent: 0; text-align: center !important; }
 /*@ Components - infobox */
-.infobox { font-size: 1em; line-height: 1.1; text-indent: 0; margin-left: 0.5em; margin-right: 0.5em; }
-.infobox p { padding-left: 0.75em; padding-right: 0.75em; }
-/*# .infobox p:first-child */
-.infobox p.top { padding-top: 0.25em; margin-top: 0.25em; border-top: thin solid black; }
-/*# .infobox p:last-child */
-.infobox p.bottom { padding-bottom: 0.25em; border-bottom: thin solid black; }
+.infobox/*# [epub|type=contributors] > section */ { font-size: 1em; line-height: 1.1; text-indent: 0; margin-left: 0.5em; margin-right: 0.5em; }
+.infobox p/*# [epub|type=contributors] > section p */ { padding-left: 0.75em; padding-right: 0.75em; }
+.infobox p.top/*# [epub|type=contributors] > section p:first-child */ { padding-top: 0.25em; margin-top: 0.25em; border-top: thin solid black; }
+.infobox p.bottom/*# [epub|type=contributors] > section p:last-child */ { padding-bottom: 0.25em; border-bottom: thin solid black; }
 /*@ Components - introdl */
 .introdl { font-size: 1em; line-height: 1.1; }
 .introdl dt, .introdl p.dt { font-family: Kai, SP, serif; text-indent: 0em; margin-top: 1em; margin: 1em 0.5em 0 0.5em; }
@@ -126,28 +124,21 @@ p.line-eps-0e5, .line-eps-0e5 p { margin-top: 0.5em; margin-bottom: 0.5em; }
 /*@ Components - list - vertical right, normal normal */
 .list-vr-nn { font-size: 1.1em; line-height: 1; page-break-inside: avoid; break-inside: avoid; }
 .list-vr-nn > li { float: right; text-align: center !important; width: 1em; padding: 0 0.5em; }
-/*@ Components - endnote */
-/*# [epub|type=noteref] */
-.en-ref { color: grey; text-decoration: underline; vertical-align: top; font-size: 0.75em; }
-/*# [epub|type=noteref] > img */
-.en-ref > img { width: 1em; }
+/*@ Components - footnote */
+.en-ref/*# [epub|type=noteref] */ { color: grey; text-decoration: underline; vertical-align: top; font-size: 0.75em; }
+.en-ref > img/*# [epub|type=noteref] > img */ { width: 1em; }
 footer, .footer { margin: 3em 0.5em 0 0.5em; text-indent: 0em; }
-/*# [epub|type=endnotes] */
-.endnotes { margin: 0.5em 0.75em; }
-/*# [epub|type=endnotes] li */
-.endnotes li { color: grey; font-size: 0.8em; line-height: 1.2; margin: 0.25em 0; }
-/*# [epub|type=endnote] a */
-.endnote a { color: grey; text-decoration: underline; }
+.footnotes/*# [epub|type=footnotes] */ { margin: 0.5em 0.75em; }
+.footnotes li/*# [epub|type=footnotes] li */ { color: grey; font-size: 0.8em; line-height: 1.2; margin: 0.25em 0; }
+.footnote a/*# [epub|type=footnote] a */ { color: grey; text-decoration: underline; }
 /*@ Components - separator */
 p.spr { text-indent: 0em; text-align: center !important; margin: 0; }
 h3 ~ p.spr, .h3 ~ p.spr { margin: 1.25em 0; }
 h4 ~ p.spr, .h4 ~ p.spr { margin: 1em 0; }
-.spr-endnotes { width: 50%; border-top: thin solid grey; }
+.spr-footnotes { width: 50%; border-top: thin solid grey; }
 /*@ Components - illus */
-/*# [epub|type=figure] */
-.illus { text-indent: 0; text-align: center !important; width: 100%; height: 100vh; page-break-inside: avoid; break-inside: avoid; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center; }
-/*# [epub|type=figure] > * */
-.illus > * { margin: auto; }
+.illus/*# [epub|type=figure] */ { text-indent: 0; text-align: center !important; width: 100%; height: 100vh; page-break-inside: avoid; break-inside: avoid; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center; }
+.illus > */*# [epub|type=figure] > * */ { margin: auto; }
 /*@ Components - shape */
 .roundrect { padding: 0.25em; border-radius: 0.5em; }
 .circle { border-radius: 50%; }
