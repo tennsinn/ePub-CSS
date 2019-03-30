@@ -1,6 +1,6 @@
 @charset "UTF-8";
-/*! ePub-CSS v3.6.1, TL2-Onekey, by 两仪天心&轻亦之间 */
-/*! ePub CSS, TL2-Framework v3.5.0, by 两仪天心&轻亦之间 */
+/*! ePub-CSS v3.6.2, TL2-Onekey, by 两仪天心&轻亦之间 */
+/*! ePub CSS, TL2-Framework v3.5.1, by 两仪天心&轻亦之间 */
 /*@ Define */
 @namespace epub "http://www.idpf.org/2007/ops";
 @page { margin: 0; padding: 0; border: none; }
@@ -40,7 +40,7 @@ center, .c .center { text-align: center; }
 :root:not(.bookcontent-fixed) p { text-align: inherit; }
 /*@ Format - section */
 body > .section { duokan-bleed: leftright; overflow: visible; margin: 0 auto; width: 100%; }
-.epigraph { padding-top: 40%; }
+.epigraph .section { margin: 40% 10% 0 10%; }
 .color_page .section, .flyleaf .section, .appendix .section { margin-top: 1.5em; }
 /*@ Format - pragraph */
 .introduction .section, .interleaf .section, .preface .section, .chapter .section, .afterword .section, .feature .section, .foreshow .section { text-indent: 2em; }
