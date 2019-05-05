@@ -1,11 +1,12 @@
 @charset "UTF-8";
-/*! ePub CSS, TL2-Signature v3.1.3, by 两仪天心&轻亦之间 */
+/*! ePub CSS, TL2-Signature v3.2.0, by 两仪天心&轻亦之间 */
 /*@ Overall */
 @font-face { font-family: "org"; src: url("../Fonts/org.ttf") format("truetype"); }
 @font-face { font-family: "group"; src: url("../Fonts/group.ttf") format("truetype"); }
 @font-face { font-family: "team"; src: url("../Fonts/team.ttf") format("truetype"); }
 @font-face { font-family: "maker"; src: url("../Fonts/maker.ttf") format("truetype"); }
 @font-face { font-family: "source"; src: url("../Fonts/source.ttf") format("truetype"); }
+@font-face { font-family: "proofreader"; src: url("../Fonts/proofreader.ttf") format("truetype"); }
 /*@ Lattice - biserial, separated, v2.1.1 */
 .information .lattice { width: 16em; padding: 5%; margin: auto; }
 .information .lattice > .col-right { float: right; width: 40%; padding: 1.5em 0 1.5em 2.5%; border-left: thick double black; margin-left: 5%; }
@@ -22,12 +23,13 @@
 .information .lattice > .col-left > .maker > .line-1 { margin: 0 0 -4em 0.1em; border-left: thin solid black; padding: 0.5em 0 2.5em 0.1em; }
 .information .lattice > .col-left > .maker > .line-2 { padding-top: 1.5em; }
 .information .lattice > .col-left > .source { font-family: source, Song, serif; font-size: 1.25em; padding: 0.5em 0; }
-/*@ Classic - logo, listed, v1.1.0 */
+/*@ Classic - logo, listed, v1.2.0 */
 .information .classic { width: 30em; padding: 5%; margin: 10% auto; }
 .information .classic > .team { text-align: right !important; margin: 0 5% 0.5em 5%; font-family: team, Yuan, sans-serif; text-decoration: underline; }
 .information .classic > .logo { max-height: 10em; text-align: center !important; margin: auto; }
 .information .classic > .contributer { text-align: right !important; margin: 0 5% 0 10%; }
 .information .classic > .contributer > .item { font-family: Hei, sans-serif; font-size: 0.5em; color: white; padding-right: 0.25em; height: 3em; margin-top: 0.75em; margin-bottom: -3.1em; }
-.information .classic .source { font-family: source, Yuan, sans-serif; margin-left: 25%; padding-right: 0.25em; border-right: 0.75em solid black; border-bottom: medium solid black; }
-.information .classic .maker { font-family: maker, Kai, serif; padding-right: 0.25em; border-right: 0.75em solid black; border-bottom: medium solid black; }
+.information .classic > .source > .name { font-family: source, Yuan, sans-serif; margin-left: 25%; padding-right: 0.25em; border-right: 0.75em solid black; border-bottom: medium solid black; }
+.information .classic > .proofreader > .name { font-family: proofreader, Yuan, sans-serif; margin-left: 12.5%; padding-right: 0.25em; border-right: 0.75em solid black; border-bottom: medium solid black; }
+.information .classic > .maker > .name { font-family: maker, Kai, serif; padding-right: 0.25em; border-right: 0.75em solid black; border-bottom: medium solid black; }
 .information .classic .statement { text-align: right !important; margin: 1em 5% 0 5%; font-size: 0.75em; color: red; }
