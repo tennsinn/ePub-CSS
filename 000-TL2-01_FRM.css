@@ -1,6 +1,6 @@
 @charset "UTF-8";
-/*! ePub-CSS v3.7.0, TL2-Onekey, by 两仪天心&轻亦之间 */
-/*! ePub CSS, TL2-Framework v3.6.0, by 两仪天心&轻亦之间 */
+/*! ePub-CSS v3.7.2, TL2-Onekey, by 两仪天心&轻亦之间 */
+/*! ePub CSS, TL2-Framework v3.6.1, by 两仪天心&轻亦之间 */
 /*@ Define */
 @namespace epub "http://www.idpf.org/2007/ops";
 @page { margin: 0; size: auto; bleed: auto; }
@@ -13,7 +13,6 @@
 @font-face { font-family: "title"; src: url("../Fonts/title.ttf") format("truetype"); }
 @font-face { font-family: "subtitle"; src: url("../Fonts/subtitle.ttf") format("truetype"); }
 @font-face { font-family: "order"; src: url("../Fonts/order.ttf") format("truetype"); }
-@font-face { font-family: "cre"; src: url("../Fonts/cre.ttf") format("truetype"); }
 @font-face { font-family: "aut"; src: url("../Fonts/aut.ttf") format("truetype"); }
 @font-face { font-family: "ill"; src: url("../Fonts/ill.ttf") format("truetype"); }
 @font-face { font-family: "conttitle"; src: url("../Fonts/conttitle.ttf") format("truetype"); }
@@ -47,7 +46,7 @@ body > .section { duokan-bleed: leftright; overflow: visible; margin: 0 auto; wi
 .epigraph .section { margin: 40% 10% 0 10%; }
 .color_page .section, .flyleaf .section, .appendix .section { margin-top: 1.5em; }
 /*@ Format - pragraph */
-.introduction .section, .interleaf .section, .preface .section, .chapter .section, .afterword .section, .feature .section, .foreshow .section { text-indent: 2em; }
+.introduction .section, .interleaf .section, .preface .section, .chapter .section, .afterword .section, .feature .section, .foreshow .section, .bibliography .section { text-indent: 2em; }
 .introduction .section p, .interleaf .section p, .flyleaf .section p, .epigraph .section p, .preface .section p, .chapter .section p, .afterword .section p, .feature .section p, .foreshow .section p { margin: 0.5em 0.5em; }
 .color_page .section p, .flyleaf .section p, .appendix .section p { margin: 0.25em 0.5em; }
 .dedication > .section { width: 20em; margin: 20% auto 0 auto; }
