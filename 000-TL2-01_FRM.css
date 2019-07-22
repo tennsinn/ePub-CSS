@@ -1,6 +1,6 @@
 @charset "UTF-8";
-/*! ePub-CSS v3.7.3, TL2-Onekey, by 两仪天心&轻亦之间 */
-/*! ePub CSS, TL2-Framework v3.6.1, by 两仪天心&轻亦之间 */
+/*! ePub-CSS v3.7.4, TL2-Onekey, by 两仪天心&轻亦之间 */
+/*! ePub CSS, TL2-Framework v3.6.3, by 两仪天心&轻亦之间 */
 /*@ Define */
 @namespace epub "http://www.idpf.org/2007/ops";
 @page { margin: 0; size: auto; bleed: auto; }
@@ -31,7 +31,7 @@ table, .t, .table { display: table; margin-left: auto; margin-right: auto; break
 img { max-width: 100%; max-height: 100%; }
 ruby { ruby-align: center; -epub-ruby-position: over; ruby-position: over; text-indent: 0; }
 em, .em, .emphasis { font-style: inherit; font-weight: inherit; -webkit-text-emphasis-position: under right; -epub-text-emphasis-position: under right; text-emphasis-position: under right; -webkit-text-emphasis-style: filled dot; -epub-text-emphasis-style: filled dot; text-emphasis-style: filled dot; }
-a { color: dimgrey; text-decoration: none; }
+a { color: black; text-decoration: none; }
 b, .b, .bold { font-weight: bold; }
 i, .i, .italic { font-style: italic; }
 u, .u, .underline { text-decoration: underline; }
@@ -44,11 +44,12 @@ h1.covertitle { text-align: center; width: 0; height: 0; color: transparent; dis
 /*@ Format - section */
 body > .section { duokan-bleed: leftright; overflow: visible; margin: 0 auto; width: 100%; }
 .epigraph .section { margin: 40% 10% 0 10%; }
-.color_page .section, .flyleaf .section, .appendix .section { margin-top: 1.5em; }
+.appendix .section { margin-top: 1.5em; }
+.color_page .illus ~ .section, .flyleaf .illus ~ .section { margin: 1.5em 0.5em 0 0.5em; }
 /*@ Format - pragraph */
 .introduction .section, .interleaf .section, .preface .section, .chapter .section, .afterword .section, .feature .section, .foreshow .section, .bibliography .section { text-indent: 2em; }
-.introduction .section p, .interleaf .section p, .flyleaf .section p, .epigraph .section p, .preface .section p, .chapter .section p, .afterword .section p, .feature .section p, .foreshow .section p { margin: 0.5em 0.5em; }
-.color_page .section p, .flyleaf .section p, .appendix .section p { margin: 0.25em 0.5em; }
+.introduction .section p, .interleaf .section p, .epigraph .section p, .preface .section p, .chapter .section p, .afterword .section p, .feature .section p, .foreshow .section p { margin: 0.5em 0.5em; }
+.appendix .section p { margin: 0.25em 0.5em; }
 .dedication > .section { width: 20em; margin: 20% auto 0 auto; }
 /*@ Format - font */
 .f-dflt { font-family: DFLT, SP, sans-serif !important; }
