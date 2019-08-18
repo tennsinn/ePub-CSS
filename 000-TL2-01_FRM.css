@@ -1,6 +1,6 @@
 @charset "UTF-8";
-/*! ePub-CSS v3.7.7, TL2-Onekey, by 两仪天心&轻亦之间 */
-/*! ePub CSS, TL2-Framework v3.6.3, by 两仪天心&轻亦之间 */
+/*! ePub-CSS v3.7.8, TL2-Onekey, by 两仪天心&轻亦之间 */
+/*! ePub CSS, TL2-Framework v3.6.4, by 两仪天心&轻亦之间 */
 /*@ Define */
 @namespace epub "http://www.idpf.org/2007/ops";
 @page { margin: 0; size: auto; bleed: auto; }
@@ -109,23 +109,23 @@ p.line-eps-0e5, .line-eps-0e5 p { margin-top: 0.5em; margin-bottom: 0.5em; }
 /*@ Components - list - standard left, normal normal */
 .list-sl-nn { font-size: 1.1em; line-height: 1.1; text-align: left !important; margin: 0 auto; }
 .list-sl-nn > li { margin-top: 1em; }
-.list-sl-nn a { color: dimgray; }
+.list-sl-nn a { color: black; }
 /*@ Components - list - standard left, normal underline */
 .list-sl-nu { font-size: 1.1em; line-height: 1.1; text-align: left !important; margin: 0 auto; }
 .list-sl-nu > li { margin-top: 1em; }
-.list-sl-nu a { color: dimgray; text-decoration: underline; }
+.list-sl-nu a { color: black; text-decoration: underline; }
 /*@ Components - list - standard center, relax normal */
 .list-sc-rn { font-size: 1.1em; line-height: 1.1; text-align: center !important; margin: auto; }
 .list-sc-rn > li { margin-top: 1.5em; }
-.list-sc-rn a { color: dimgray; text-decoration: none; }
+.list-sc-rn a { color: black; text-decoration: none; }
 /*@ Components - list - standard center, normal normal */
 .list-sc-nn { font-size: 1.1em; line-height: 1.1; text-align: center !important; margin: auto; }
 .list-sc-nn > li { margin-top: 1em; }
-.list-sc-nn a { color: dimgray; text-decoration: none; }
+.list-sc-nn a { color: black; text-decoration: none; }
 /*@ Components - list - standard center, relax border, bottom dotted */
 .list-sc-rb-bd { font-size: 1.1em; line-height: 1.2; text-align: center !important; margin: auto; }
 .list-sc-rb-bd > li { margin-top: 1.5em; padding: 0 0.25em 0.5em 0.25em; border-bottom: medium dotted; }
-.list-sc-rb-bd a { color: dimgray; text-decoration: none; }
+.list-sc-rb-bd a { color: black; text-decoration: none; }
 /*@ Components - list - vertical right, normal normal */
 .list-vr-nn { font-size: 1.1em; line-height: 1; page-break-inside: avoid; break-inside: avoid; }
 .list-vr-nn > li { float: right; text-align: center !important; width: 1em; padding: 0 0.5em; }
