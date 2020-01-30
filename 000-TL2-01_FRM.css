@@ -1,6 +1,6 @@
 @charset "UTF-8";
-/*! ePub-CSS v3.7.8, TL2-Onekey, by 两仪天心&轻亦之间 */
-/*! ePub CSS, TL2-Framework v3.6.4, by 两仪天心&轻亦之间 */
+/*! ePub-CSS v3.7.9, TL2-Onekey, by 两仪天心&轻亦之间 */
+/*! ePub CSS, TL2-Framework v3.6.5, by 两仪天心&轻亦之间 */
 /*@ Define */
 @namespace epub "http://www.idpf.org/2007/ops";
 @page { margin: 0; size: auto; bleed: auto; }
@@ -137,7 +137,7 @@ footer, .footer { margin: 3em 0.5em 0 0.5em; text-indent: 0em; }
 .footnotes li/*# [epub|type=footnotes] li */ { color: grey; font-size: 0.8em; line-height: 1.2; margin: 0.25em 0; }
 .footnote a/*# [epub|type=footnote] a */ { color: grey; text-decoration: underline; }
 /*@ Components - separator */
-p.spr { text-indent: 0em; text-align: center !important; margin: 0; }
+p.spr { text-indent: 0em; text-align: center !important; margin: 0.75em 0; }
 h3 ~ p.spr, .h3 ~ p.spr { margin: 1.25em 0; }
 .section h4 ~ p.spr, .section .h4 ~ p.spr { margin: 1em 0; }
 .spr-footnotes { width: 50%; border-top: thin solid grey; }
