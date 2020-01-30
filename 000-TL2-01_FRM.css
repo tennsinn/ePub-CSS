@@ -1,6 +1,6 @@
 @charset "UTF-8";
-/*! ePub-CSS v3.7.11, TL2-Onekey, by 两仪天心&轻亦之间 */
-/*! ePub CSS, TL2-Framework v3.6.7, by 两仪天心&轻亦之间 */
+/*! ePub-CSS v3.8.0, TL2-Onekey, by 两仪天心&轻亦之间 */
+/*! ePub CSS, TL2-Framework v3.7.0, by 两仪天心&轻亦之间 */
 /*@ Define */
 @namespace epub "http://www.idpf.org/2007/ops";
 @page { margin: 0; size: auto; bleed: auto; }
@@ -10,19 +10,11 @@
 @font-face { font-family: "Yuan"; src: local("圆体"), local("Yuanti"), local("Yuanti SC"), local("幼圆"), local("YouYuan"), local("STYuan"), local("DK-HEITI"); }
 @font-face { font-family: "Kai"; src: local("楷体"), local("Kaiti"), local("Kaiti SC"), local("STKai"), local("DK-KAITI"); }
 @font-face { font-family: "Song"; src: local("华文中宋"), local("宋体"), local("Songti"), local("Songti SC"), local("STSong"), local("DK-SONGTI"); }
-@font-face { font-family: "title"; src: url("../Fonts/title.ttf") format("truetype"); }
-@font-face { font-family: "subtitle"; src: url("../Fonts/subtitle.ttf") format("truetype"); }
-@font-face { font-family: "order"; src: url("../Fonts/order.ttf") format("truetype"); }
-@font-face { font-family: "aut"; src: url("../Fonts/aut.ttf") format("truetype"); }
-@font-face { font-family: "ill"; src: url("../Fonts/ill.ttf") format("truetype"); }
-@font-face { font-family: "conttitle"; src: url("../Fonts/conttitle.ttf") format("truetype"); }
-@font-face { font-family: "contents"; src: url("../Fonts/contents.ttf") format("truetype"); }
-@font-face { font-family: "subcont"; src: url("../Fonts/subcont.ttf") format("truetype"); }
 /*@ Reset - Global*/
 * { margin: 0; padding: 0; border: none; max-width: 100%; }
 body { font-family: DFLT, SP, sans-serif; font-size: 1em; line-height: 1.2; text-indent: 0; vertical-align: baseline; background: transparent; word-spacing: normal; letter-spacing: normal; white-space: normal; word-wrap: break-word; overflow-wrap: break-word; text-align: left; -moz-text-align-last: auto; -webkit-text-align-last: auto; -epub-text-align-last: auto; text-align-last: auto; -webkit-line-break: auto; -epub-line-break: auto; line-break: auto; -webkit-word-break: break-all; -epub-word-break: break-all; word-break: break-all; hanging-punctuation: first allow-end last; -ms-hyphens: auto; -moz-hyphens: auto; -webkit-hyphens: auto; -epub-hyphens: auto; hyphens: auto; -webkit-text-underline-position: under left; -epub-text-underline-position: under left; text-underline-position: under left; overflow: visible; }
-h1, .h1 { font-family: title, Song, SP, serif; font-weight: normal; font-size: 2.5em; line-height: 1; text-indent: 0em; }
-h2, .h2 { font-family: subtitle, Song, SP, serif; font-weight: normal; font-size: 2em; line-height: 1; text-indent: 0em; }
+h1, .h1 { font-family: Song, SP, serif; font-weight: normal; font-size: 2.5em; line-height: 1; text-indent: 0em; }
+h2, .h2 { font-family: Song, SP, serif; font-weight: normal; font-size: 2em; line-height: 1; text-indent: 0em; }
 h3, .h3 { font-family: Hei, SP, sans-serif; font-weight: normal; font-size: 1.35em; line-height: 1; text-align: center !important; margin: 1.5em 0; text-indent: 0em; }
 h4, .h4 { font-family: Kai, SP, serif; font-weight: normal; font-size: 1.2em; line-height: 1; text-align: center !important; margin: 1.5em 0 1.25em 0; text-indent: 0em; }
 h5, .h5 { font-family: DFLT, SP, sans-serif; font-weight: normal; font-size: 1.1em; line-height: 1; text-align: center !important; text-indent: 0em; }
@@ -60,13 +52,6 @@ body > .section { duokan-bleed: leftright; overflow: visible; margin: 0 auto; wi
 .f-yt { font-family: Yuan, SP, sans-serif !important; }
 .f-kt { font-family: Kai, SP, serif !important; }
 .f-st { font-family: Song, SP, serif !important; }
-.aut { font-family: aut, Song, SP, serif; }
-.ill { font-family: ill, Song, SP, serif; }
-.trl { font-family: trl, Song, SP, serif; }
-.order { font-family: order, Song, SP, serif; }
-.contents h3, .contents .h3 { font-family: conttitle, Hei, SP, sans-serif; }
-.contents ol, .chapter h3, .chapter .h3, .feature h3, .feature .h3 { font-family: contents, Song, SP, sans-serif; }
-.chapter h4, .chapter .h4, .feature h4, .feature .h4 { font-family: subcont, Song, SP, sans-serif; }
 /*@ Components - page */
 .page-med { width: 20em; margin: auto; }
 .page-wide { width: 30em; margin: auto; }
