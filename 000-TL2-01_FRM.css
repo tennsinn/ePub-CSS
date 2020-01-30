@@ -1,6 +1,6 @@
 @charset "UTF-8";
-/*! ePub-CSS v3.7.10, TL2-Onekey, by 两仪天心&轻亦之间 */
-/*! ePub CSS, TL2-Framework v3.6.6, by 两仪天心&轻亦之间 */
+/*! ePub-CSS v3.7.11, TL2-Onekey, by 两仪天心&轻亦之间 */
+/*! ePub CSS, TL2-Framework v3.6.7, by 两仪天心&轻亦之间 */
 /*@ Define */
 @namespace epub "http://www.idpf.org/2007/ops";
 @page { margin: 0; size: auto; bleed: auto; }
@@ -47,10 +47,12 @@ body > .section { duokan-bleed: leftright; overflow: visible; margin: 0 auto; wi
 .appendix .section { margin-top: 1.5em; }
 .color_page .illus ~ .section, .flyleaf .illus ~ .section, .interleaf .illus ~ .section { margin: 1.5em 0.5em 0 0.5em; }
 /*@ Format - pragraph */
-.introduction .section, .interleaf .section, .preface .section, .chapter .section, .afterword .section, .feature .section, .foreshow .section, .bibliography .section { text-indent: 2em; }
-.introduction .section p, .interleaf .section p, .epigraph .section p, .preface .section p, .chapter .section p, .afterword .section p, .feature .section p, .foreshow .section p { margin: 0.5em 0.5em; }
+.introduction .section, .preface .section, .chapter .section, .afterword .section, .feature .section, .foreshow .section, .bibliography .section { text-indent: 2em; }
+.introduction .section p, .epigraph .section p, .preface .section p, .chapter .section p, .afterword .section p, .feature .section p, .foreshow .section p { margin: 0.5em 0.5em; }
 .appendix .section p { margin: 0.25em 0.5em; }
 .dedication > .section { width: 20em; margin: 20% auto 0 auto; }
+.section-text { text-indent: 2em; }
+.section-text p { margin: 0.25em 0.5em; }
 /*@ Format - font */
 .f-dflt { font-family: DFLT, SP, sans-serif !important; }
 .f-sp { font-family: SP, sans-serif !important; }
