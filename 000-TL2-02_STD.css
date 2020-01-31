@@ -1,10 +1,10 @@
 @charset "UTF-8";
-/*! ePub CSS, TL2-Standard v3.2.5, by 两仪天心&轻亦之间 */
+/*! ePub CSS, TL2-Standard v3.2.6, by 两仪天心&轻亦之间 */
 /*@ Text - wrap */
 .wrap-no { white-space: nowrap; }
 .wrap-nom { word-wrap: normal; overflow-wrap: normal; }
 /*@ Text - indent */
-p.i-0, .i-0 p { text-indent: 0em; }
+p.i-0, .i-0 p { text-indent: 0em !important; }
 p.i-p1e, .i-p1e p { text-indent: 1em; }
 p.i-p2e, .i-p2e p { text-indent: 2em; }
 p.i-p3e, .i-p3e p { text-indent: 3em; }
