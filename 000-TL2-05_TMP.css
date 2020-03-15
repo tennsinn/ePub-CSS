@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*! ePub CSS, TL2-Template v0.9.0, by 两仪天心&轻亦之间 */
+/*! ePub CSS, TL2-Template v0.9.1, by 两仪天心&轻亦之间 */
 /*@ Title Page - default */
 .default .title_page { text-align: center !important; }
 .default .title_page h1 { margin-top: 25%; }
@@ -18,9 +18,9 @@
 .normal .h1 { font-family: title, Song, SP, serif; }
 .normal .h2 { font-family: subtitle, Song, SP, serif; }
 .normal .cre { font-family: cre, Song, SP, serif; }
-.normal .aut { font-family: aut, Song, SP, serif; }
-.normal .ill { font-family: ill, Song, SP, serif; }
-.normal .trl { font-family: trl, Song, SP, serif; }
+.normal .aut { font-family: aut, cre, Song, SP, serif; }
+.normal .ill { font-family: ill, cre, Song, SP, serif; }
+.normal .trl { font-family: trl, cre, Song, SP, serif; }
 .normal .order { font-family: order, Song, SP, serif; }
 .normal .contents h3, .normal .contents .h3 { font-family: conttitle, Hei, SP, sans-serif; }
 .normal .contents ol, .normal .chapter h3, .normal .chapter .h3, .normal .feature h3, .normal .feature .h3 { font-family: contents, Song, SP, sans-serif; }
