@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*! ePub CSS, TL2-Standard v3.2.7, by 两仪天心&轻亦之间 */
+/*! ePub CSS, TL2-Standard v3.2.8, by 两仪天心&轻亦之间 */
 /*@ Text - wrap */
 .wrap-no { white-space: nowrap; }
 .wrap-nom { word-wrap: normal; overflow-wrap: normal; }
@@ -452,6 +452,7 @@ p.i-n4e, .i-n4e p { text-indent: -4em; padding-left: 4em; }
 .mt-p0e8 { margin-top: 0.8em; }
 .mt-p0e9 { margin-top: 0.9em; }
 .mt-p1e { margin-top: 1em; }
+.mt-p1e25 { margin-top: 1.25em; }
 .mt-p1e5 { margin-top: 1.5em; }
 .mt-p2e { margin-top: 2em; }
 .mt-p2e5 { margin-top: 2.5em; }
@@ -760,6 +761,12 @@ p.i-n4e, .i-n4e p { text-indent: -4em; padding-left: 4em; }
 .pt-4e { padding-top: 4em; }
 .pt-4e5 { padding-top: 4.5em; }
 .pt-5e { padding-top: 5em; }
+.pt-6e { padding-top: 6em; }
+.pt-7e { padding-top: 7em; }
+.pt-8e { padding-top: 8em; }
+.pt-9e { padding-top: 9em; }
+.pt-10e { padding-top: 10em; }
+.pt-15e { padding-top: 15em; }
 /*@ Padding - right per */
 .pr-2p5 { padding-right: 2.5%; }
 .pr-5p { padding-right: 5%; }
