@@ -1,6 +1,6 @@
 @charset "UTF-8";
-/*! ePub-CSS v3.8.4, TL2-Onekey, by 两仪天心&轻亦之间 */
-/*! ePub CSS, TL2-Framework v3.7.1, by 两仪天心&轻亦之间 */
+/*! ePub-CSS v3.8.5, TL2-Onekey, by 两仪天心&轻亦之间 */
+/*! ePub CSS, TL2-Framework v3.7.2, by 两仪天心&轻亦之间 */
 /*@ Define */
 @namespace epub "http://www.idpf.org/2007/ops";
 @page { margin: 0; size: auto; bleed: auto; }
@@ -114,7 +114,7 @@ p.line-eps-0e5, .line-eps-0e5 p { margin-top: 0.5em; margin-bottom: 0.5em; }
 .list-sc-rb-bd > li { margin-top: 1.5em; padding: 0 0.25em 0.5em 0.25em; border-bottom: medium dotted; }
 .list-sc-rb-bd a { color: black; text-decoration: none; }
 /*@ Components - list - vertical right, normal normal */
-.list-vr-nn { font-size: 1.1em; line-height: 1; page-break-inside: avoid; break-inside: avoid; }
+.list-vr-nn { font-size: 1.1em; line-height: 1.1; page-break-inside: avoid; break-inside: avoid; }
 .list-vr-nn > li { float: right; text-align: center !important; width: 1em; padding: 0 0.5em; }
 /*@ Components - footnote */
 .fn-ref/*# [epub|type=noteref] */ { color: grey; text-decoration: underline; vertical-align: top; font-size: 0.75em; }
