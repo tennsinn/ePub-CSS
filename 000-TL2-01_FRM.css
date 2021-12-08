@@ -1,6 +1,6 @@
 @charset "UTF-8";
-/*! ePub-CSS v3.8.9, TL2-Onekey, by 两仪天心&轻亦之间 */
-/*! ePub CSS, TL2-Framework v3.7.4, by 两仪天心&轻亦之间 */
+/*! ePub-CSS v3.8.10, TL2-Onekey, by 两仪天心&轻亦之间 */
+/*! ePub CSS, TL2-Framework v3.7.5, by 两仪天心&轻亦之间 */
 /*@ Define */
 @namespace epub "http://www.idpf.org/2007/ops";
 @page { margin: 0; size: auto; bleed: auto; }
@@ -20,7 +20,7 @@ h4, .h4 { font-family: Kai, SP, serif; font-weight: normal; font-size: 1.2em; li
 h5, .h5 { font-family: DFLT, SP, sans-serif; font-weight: normal; font-size: 1.1em; line-height: 1; text-align: center !important; text-indent: 0em; }
 ol, ul, li { list-style: none; }
 table, .t, .table { display: table; margin-left: auto; margin-right: auto; break-inside: auto; page-break-inside: auto; }
-img { max-width: 100%; max-height: 100%; }
+img { width: 100%; height: 100%; }
 ruby { ruby-align: center; -epub-ruby-position: over; ruby-position: over; text-indent: 0; }
 em, .em, .emphasis { font-style: inherit; font-weight: inherit; -webkit-text-emphasis-position: under right; -epub-text-emphasis-position: under right; text-emphasis-position: under right; -webkit-text-emphasis-style: filled dot; -epub-text-emphasis-style: filled dot; text-emphasis-style: filled dot; }
 a { color: black; text-decoration: none; }
