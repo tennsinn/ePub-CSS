@@ -1,20 +1,20 @@
 @charset "UTF-8";
-/*! ePub CSS, TL2-Standard v3.2.8, by 两仪天心&轻亦之间 */
+/*! ePub CSS, TL2-Standard v3.3.0, by 两仪天心&轻亦之间 */
 /*@ Text - wrap */
 .wrap-no { white-space: nowrap; }
 .wrap-nom { word-wrap: normal; overflow-wrap: normal; }
 /*@ Text - indent */
-p.i-0, .i-0 p { text-indent: 0em !important; }
-p.i-p1e, .i-p1e p { text-indent: 1em; }
-p.i-p2e, .i-p2e p { text-indent: 2em; }
-p.i-p3e, .i-p3e p { text-indent: 3em; }
-p.i-p4e, .i-p4e p { text-indent: 4em; }
-p.i-p5e, .i-p5e p { text-indent: 5em; }
-p.i-p6e, .i-p6e p { text-indent: 6em; }
-p.i-n1e, .i-n1e p { text-indent: -1em; padding-left: 1em; }
-p.i-n2e, .i-n2e p { text-indent: -2em; padding-left: 2em; }
-p.i-n3e, .i-n3e p { text-indent: -3em; padding-left: 3em; }
-p.i-n4e, .i-n4e p { text-indent: -4em; padding-left: 4em; }
+p.i-0, li.i-0, .i-0 p, .i-0 li { text-indent: 0em !important; }
+p.i-p1e, li.i-p1e, .i-p1e p, .i-p1e li { text-indent: 1em; }
+p.i-p2e, li.i-p2e, .i-p2e p, .i-p2e li { text-indent: 2em; }
+p.i-p3e, li.i-p3e, .i-p3e p, .i-p3e li { text-indent: 3em; }
+p.i-p4e, li.i-p4e, .i-p4e p, .i-p4e li { text-indent: 4em; }
+p.i-p5e, li.i-p5e, .i-p5e p, .i-p5e li { text-indent: 5em; }
+p.i-p6e, li.i-p6e, .i-p6e p, .i-p6e li { text-indent: 6em; }
+p.i-n1e, li.i-n1e, .i-n1e p, .i-n1e li { text-indent: -1em; padding-left: 1em; }
+p.i-n2e, li.i-n2e, .i-n2e p, .i-n2e li { text-indent: -2em; padding-left: 2em; }
+p.i-n3e, li.i-n3e, .i-n3e p, .i-n3e li { text-indent: -3em; padding-left: 3em; }
+p.i-n4e, li.i-n4e, .i-n4e p, .i-n4e li { text-indent: -4em; padding-left: 4em; }
 /*@ Font - size */
 .s-0e1 { font-size: 0.1em; }
 .s-0e15 { font-size: 0.15em; }
