@@ -1,5 +1,10 @@
 @charset "UTF-8";
-/*! ePub CSS, TL2-Standard v3.4.0, by 两仪天心&轻亦之间 */
+/*!
+ * ePub-CSS v4.0.0 - Standard Styles
+ * https://github.com/tennsinn/ePub-CSS
+ *
+ * Licensed under GNU General Public License v3.0
+ */
 /*@ Text - wrap */
 .wrap-no { white-space: nowrap; }
 .wrap-nom { word-wrap: normal; overflow-wrap: normal; }
