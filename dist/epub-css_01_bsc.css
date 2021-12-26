@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
- * ePub-CSS v4.0.0 - Basic Styles
+ * ePub-CSS v4.1.0 - Basic Styles
  * https://github.com/tennsinn/ePub-CSS
  *
  * Licensed under GNU General Public License v3.0
@@ -14,7 +14,7 @@
 @font-face { font-family: "Yuan"; src: local("圆体"), local("Yuanti"), local("Yuanti SC"), local("幼圆"), local("YouYuan"), local("STYuan"), local("DK-HEITI"); }
 @font-face { font-family: "Kai"; src: local("楷体"), local("Kaiti"), local("Kaiti SC"), local("STKai"), local("DK-KAITI"); }
 @font-face { font-family: "Song"; src: local("华文中宋"), local("宋体"), local("Songti"), local("Songti SC"), local("STSong"), local("DK-SONGTI"); }
-/*@ Reset - Global*/
+/*@ Reset - Global */
 * { margin: 0; padding: 0; border: none; max-width: 100%; }
 body { font-family: DFLT, SP, sans-serif; font-size: 1em; line-height: 1.2; text-indent: 0; vertical-align: baseline; background: transparent; word-spacing: normal; letter-spacing: normal; white-space: normal; word-wrap: break-word; overflow-wrap: break-word; text-align: justify; -moz-text-align-last: auto; -webkit-text-align-last: auto; -epub-text-align-last: auto; text-align-last: auto; -webkit-line-break: auto; -epub-line-break: auto; line-break: auto; -webkit-word-break: break-all; -epub-word-break: break-all; word-break: break-all; hanging-punctuation: first allow-end last; -ms-hyphens: auto; -moz-hyphens: auto; -webkit-hyphens: auto; -epub-hyphens: auto; hyphens: auto; -webkit-text-underline-position: under left; -epub-text-underline-position: under left; text-underline-position: under left; overflow: visible; }
 h1, .h1 { font-family: Song, SP, serif; font-weight: normal; font-size: 2.5em; line-height: 1; text-indent: 0em; }
@@ -55,13 +55,13 @@ body > .section { duokan-bleed: leftright; overflow: visible; margin: 0 auto; wi
 .f-yt { font-family: Yuan, SP, sans-serif !important; }
 .f-kt { font-family: Kai, SP, serif !important; }
 .f-st { font-family: Song, SP, serif !important; }
-/*@ Components - page */
+/*@ Common - page */
 .page-med { width: 20em; margin: auto; }
 .page-wide { width: 30em; margin: auto; }
 .page-full { text-indent: 0; width: 100%; height: 100vh; page-break-inside: avoid; break-inside: avoid; display: flex; display: -webkit-flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center; }
 .page-full > * { margin: auto; }
 html.page-one, html.page-one > body, html.page-one > body > .section { height: 100%; }
-/*@ Components - line */
+/*@ Common - line */
 p.line-h, .line-h p { line-height: 1; height: 1em; white-space: nowrap; }
 p.line-hc, .line-hc p { line-height: 1; height: 1em; white-space: nowrap; text-align: center !important; margin-left: auto; margin-right: auto; }
 p.line-hr, .line-hr p { line-height: 1; height: 1em; white-space: nowrap; text-align: right !important; margin-left: auto; margin-right: 0; }
@@ -83,72 +83,3 @@ p.line-cps-0e5, .line-cps-0e5 p { margin-top: -0.5em; margin-bottom: -0.5em; }
 p.line-eps-0e1, .line-eps-0e1 p { margin-top: 0.1em; margin-bottom: 0.1em; }
 p.line-eps-0e25, .line-eps-0e25 p { margin-top: 0.25em; margin-bottom: 0.25em; }
 p.line-eps-0e5, .line-eps-0e5 p { margin-top: 0.5em; margin-bottom: 0.5em; }
-/*@ Components - pre */
-.pre-box { margin-left: 0.5em; margin-right: 0.5em; border: thin solid black; }
-.pre-small { font-size: 0.8em; text-indent: 0; text-align: center !important; }
-/*@ Components - infobox */
-.infobox/*# [epub|type=contributors] > section */ { font-size: 1em; line-height: 1.1; text-indent: 0; margin-left: 0.5em; margin-right: 0.5em; }
-.infobox p/*# [epub|type=contributors] > section p */ { padding-left: 0.75em; padding-right: 0.75em; }
-.infobox p.top/*# [epub|type=contributors] > section p:first-child */ { padding-top: 0.25em; margin-top: 0.25em; border-top: thin solid black; }
-.infobox p.bottom/*# [epub|type=contributors] > section p:last-child */ { padding-bottom: 0.25em; border-bottom: thin solid black; }
-/*@ Components - introdl */
-.introdl { font-size: 1em; line-height: 1.1; }
-.introdl dt, .introdl p.dt { font-family: Kai, SP, serif; text-indent: 0em; margin-top: 1em; margin: 1em 0.5em 0 0.5em; }
-.introdl dt span, .introdl p.dt span { font-family: Song, SP, serif; font-size: 0.7em; color: grey; }
-.introdl dd, .introdl p.dd { text-indent: 2em; margin: 0.5em 0.5em; }
-/*@ Components - list - standard left, normal normal */
-.list-sl-nn { font-size: 1.1em; line-height: 1.1; text-align: left !important; margin: 0 auto; }
-.list-sl-nn > li { margin-top: 1em; }
-.list-sl-nn a { color: black; }
-/*@ Components - list - standard left, normal underline */
-.list-sl-nu { font-size: 1.1em; line-height: 1.1; text-align: left !important; margin: 0 auto; }
-.list-sl-nu > li { margin-top: 1em; }
-.list-sl-nu a { color: black; text-decoration: underline; }
-/*@ Components - list - standard center, relax normal */
-.list-sc-rn { font-size: 1.1em; line-height: 1.1; text-align: center !important; margin: auto; }
-.list-sc-rn > li { margin-top: 1.5em; }
-.list-sc-rn a { color: black; text-decoration: none; }
-/*@ Components - list - standard center, normal normal */
-.list-sc-nn { font-size: 1.1em; line-height: 1.1; text-align: center !important; margin: auto; }
-.list-sc-nn > li { margin-top: 1em; }
-.list-sc-nn a { color: black; text-decoration: none; }
-/*@ Components - list - standard center, relax border, bottom dotted */
-.list-sc-rb-bd { font-size: 1.1em; line-height: 1.2; text-align: center !important; margin: auto; }
-.list-sc-rb-bd > li { margin-top: 1.5em; padding: 0 0.25em 0.5em 0.25em; border-bottom: medium dotted; }
-.list-sc-rb-bd a { color: black; text-decoration: none; }
-/*@ Components - list - vertical right, normal normal */
-.list-vr-nn { font-size: 1.1em; line-height: 1.1; page-break-inside: avoid; break-inside: avoid; }
-.list-vr-nn > li { float: right; text-align: center !important; width: 1em; padding: 0 0.5em; }
-/*@ Components - footnote */
-.fn-ref/*# [epub|type=noteref] */ { color: grey; text-decoration: underline; vertical-align: top; font-size: 0.75em; }
-.fn-ref > img/*# [epub|type=noteref] > img */ { width: 1em; }
-footer, .footer { margin: 3em 0.5em 0 0.5em; text-indent: 0em; }
-.footnotes/*# [epub|type=footnotes] */ { margin: 0.5em 0.75em; }
-.footnotes li/*# [epub|type=footnotes] li */ { color: grey; font-size: 0.8em; line-height: 1.2; margin: 0.25em 0; }
-.footnote a/*# [epub|type=footnote] a */ { color: grey; text-decoration: underline; }
-/*@ Components - separator */
-p.spr { text-indent: 0em; text-align: center !important; margin: 0.75em 0; }
-h3 ~ p.spr, .h3 ~ p.spr { margin: 1.25em 0; }
-.section h4 ~ p.spr, .section .h4 ~ p.spr { margin: 1em 0; }
-.spr-footnotes { width: 50%; border-top: thin solid grey; }
-/*@ Components - illus */
-.illus/*# [epub|type=figure] */ { text-indent: 0; text-align: center !important; width: 100%; height: 100vh; page-break-inside: avoid; break-inside: avoid; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center; }
-.illus > */*# [epub|type=figure] > * */ { margin: auto; }
-.illus-right/*# [epub|type=figure].right */ { float: right; width: auto; padding-left: 0.5em; }
-/*@ Components - shape */
-.roundrect { padding: 0.25em; border-radius: 0.5em; }
-.circle { border-radius: 50%; }
-/*@ Components - shape - rhombus */
-.rhombus { width: 1em; margin: 0.25em auto; }
-.rhombus > div { height: 0; width: 0; margin: 0 auto; border: 0.5em solid transparent; }
-.rhombus > .up1 { border-top: 0em solid transparent; border-bottom: 0.5em solid; }
-.rhombus > .up2 { border-top: 2em solid; border-bottom: 0em solid transparent; }
-.rhombus > .left1 { border-top: 0em solid transparent; border-right: 2em solid transparent; border-bottom: 0.5em solid; }
-.rhombus > .left2 { border-top: 0.5em solid; border-right: 2em solid transparent; border-bottom: 0em solid transparent; }
-.rhombus > .down1 { border-top: 0em solid transparent; border-bottom: 2em solid; }
-.rhombus > .down2 { border-top: 0.5em solid; border-bottom: 0em solid transparent; }
-.rhombus > .right1 { border-top: 0em solid transparent; border-bottom: 0.5em solid; border-left: 2em solid transparent; }
-.rhombus > .right2 { border-top: 0.5em solid; border-bottom: 0em solid transparent; border-left: 2em solid transparent; }
-/*@ Components - container - rhombus */
-.rhombus-box { margin: 1em auto; -o-transform: rotate(45deg); -ms-transform: rotate(45deg); -moz-transform: rotate(45deg); -webkit-transform: rotate(45deg); transform: rotate(45deg); }
-.rhombus-box > .in { margin: auto; -o-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -webkit-transform: rotate(-45deg); transform: rotate(-45deg); }
