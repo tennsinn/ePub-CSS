@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
- * ePub-CSS v4.2.3 - Standard Styles
+ * ePub-CSS v4.2.4 - Standard Styles
  * https://github.com/tennsinn/ePub-CSS
  *
  * Licensed under GNU General Public License v3.0
@@ -407,45 +407,150 @@
 .w-9e9 { width: 9.9em !important; }
 .w-10e { width: 10em !important; }
 /*@ Height */
+.h-0 { height: 0; }
 .h-auto { height: auto; }
+/*@ Height - per */
+.h-5p { height: 5%; }
+.h-10p { height: 10%; }
+.h-15p { height: 15%; }
+.h-20p { height: 20%; }
+.h-25p { height: 25%; }
+.h-30p { height: 30%; }
+.h-35p { height: 35%; }
+.h-40p { height: 40%; }
+.h-45p { height: 45%; }
+.h-50p { height: 50%; }
+.h-55p { height: 55%; }
+.h-60p { height: 60%; }
+.h-65p { height: 65%; }
+.h-70p { height: 70%; }
+.h-75p { height: 75%; }
+.h-80p { height: 80%; }
+.h-85p { height: 85%; }
+.h-90p { height: 90%; }
+.h-95p { height: 95%; }
+.h-100p { height: 100%; }
 /*@ Height - em */
-.h-0e25 { height: 0.25em; }
-.h-0e5 { height: 0.5em; }
-.h-0e75 { height: 0.75em; }
-.h-1e { height: 1em; }
-.h-1e1 { height: 1.1em; }
-.h-1e2 { height: 1.2em; }
-.h-1e25 { height: 1.25em; }
-.h-1e3 { height: 1.3em; }
-.h-1e4 { height: 1.4em; }
-.h-1e5 { height: 1.5em; }
-.h-1e6 { height: 1.6em; }
-.h-1e7 { height: 1.7em; }
-.h-1e75 { height: 1.75em; }
-.h-1e8 { height: 1.8em; }
-.h-1e9 { height: 1.9em; }
-.h-2e { height: 2em; }
-.h-2e5 { height: 2.5em; }
-.h-3e { height: 3em; }
-.h-3e5 { height: 3.5em; }
-.h-4e { height: 4em; }
-.h-4e5 { height: 4.5em; }
-.h-5e { height: 5em; }
-.h-5e5 { height: 5.5em; }
-.h-6e { height: 6em; }
-.h-6e5 { height: 6.5em; }
-.h-7e { height: 7em; }
-.h-7e5 { height: 7.5em; }
-.h-8e { height: 8em; }
-.h-8e5 { height: 8.5em; }
-.h-9e { height: 9em; }
-.h-9e5 { height: 9.5em; }
-.h-10e { height: 10em; }
-.h-11e { height: 11em; }
-.h-12e { height: 12em; }
-.h-13e { height: 13em; }
-.h-14e { height: 14em; }
-.h-15e { height: 15em; }
+.h-0e1 { height: 0.1em !important; }
+.h-0e2 { height: 0.2em !important; }
+.h-0e25 { height: 0.25em !important; }
+.h-0e3 { height: 0.3em !important; }
+.h-0e4 { height: 0.4em !important; }
+.h-0e5 { height: 0.5em !important; }
+.h-0e6 { height: 0.6em !important; }
+.h-0e7 { height: 0.7em !important; }
+.h-0e75 { height: 0.75em !important; }
+.h-0e8 { height: 0.8em !important; }
+.h-0e9 { height: 0.9em !important; }
+.h-1e { height: 1em !important; }
+.h-1e1 { height: 1.1em !important; }
+.h-1e2 { height: 1.2em !important; }
+.h-1e25 { height: 1.25em !important; }
+.h-1e3 { height: 1.3em !important; }
+.h-1e4 { height: 1.4em !important; }
+.h-1e5 { height: 1.5em !important; }
+.h-1e6 { height: 1.6em !important; }
+.h-1e7 { height: 1.7em !important; }
+.h-1e75 { height: 1.75em !important; }
+.h-1e8 { height: 1.8em !important; }
+.h-1e9 { height: 1.9em !important; }
+.h-2e { height: 2em !important; }
+.h-2e1 { height: 2.1em !important; }
+.h-2e2 { height: 2.2em !important; }
+.h-2e25 { height: 2.25em !important; }
+.h-2e3 { height: 2.3em !important; }
+.h-2e4 { height: 2.4em !important; }
+.h-2e5 { height: 2.5em !important; }
+.h-2e6 { height: 2.6em !important; }
+.h-2e7 { height: 2.7em !important; }
+.h-2e75 { height: 2.75em !important; }
+.h-2e8 { height: 2.8em !important; }
+.h-2e9 { height: 2.9em !important; }
+.h-3e { height: 3em !important; }
+.h-3e1 { height: 3.1em !important; }
+.h-3e2 { height: 3.2em !important; }
+.h-3e25 { height: 3.25em !important; }
+.h-3e3 { height: 3.3em !important; }
+.h-3e4 { height: 3.4em !important; }
+.h-3e5 { height: 3.5em !important; }
+.h-3e6 { height: 3.6em !important; }
+.h-3e7 { height: 3.7em !important; }
+.h-3e75 { height: 3.75em !important; }
+.h-3e8 { height: 3.8em !important; }
+.h-3e9 { height: 3.9em !important; }
+.h-4e { height: 4em !important; }
+.h-4e1 { height: 4.1em !important; }
+.h-4e2 { height: 4.2em !important; }
+.h-4e25 { height: 4.25em !important; }
+.h-4e3 { height: 4.3em !important; }
+.h-4e4 { height: 4.4em !important; }
+.h-4e5 { height: 4.5em !important; }
+.h-4e6 { height: 4.6em !important; }
+.h-4e7 { height: 4.7em !important; }
+.h-4e75 { height: 4.75em !important; }
+.h-4e8 { height: 4.8em !important; }
+.h-4e9 { height: 4.9em !important; }
+.h-5e { height: 5em !important; }
+.h-5e1 { height: 5.1em !important; }
+.h-5e2 { height: 5.2em !important; }
+.h-5e25 { height: 5.25em !important; }
+.h-5e3 { height: 5.3em !important; }
+.h-5e4 { height: 5.4em !important; }
+.h-5e5 { height: 5.5em !important; }
+.h-5e6 { height: 5.6em !important; }
+.h-5e7 { height: 5.7em !important; }
+.h-5e75 { height: 5.75em !important; }
+.h-5e8 { height: 5.8em !important; }
+.h-5e9 { height: 5.9em !important; }
+.h-6e { height: 6em !important; }
+.h-6e1 { height: 6.1em !important; }
+.h-6e2 { height: 6.2em !important; }
+.h-6e25 { height: 6.25em !important; }
+.h-6e3 { height: 6.3em !important; }
+.h-6e4 { height: 6.4em !important; }
+.h-6e5 { height: 6.5em !important; }
+.h-6e6 { height: 6.6em !important; }
+.h-6e7 { height: 6.7em !important; }
+.h-6e75 { height: 6.75em !important; }
+.h-6e8 { height: 6.8em !important; }
+.h-6e9 { height: 6.9em !important; }
+.h-7e { height: 7em !important; }
+.h-7e1 { height: 7.1em !important; }
+.h-7e2 { height: 7.2em !important; }
+.h-7e25 { height: 7.25em !important; }
+.h-7e3 { height: 7.3em !important; }
+.h-7e4 { height: 7.4em !important; }
+.h-7e5 { height: 7.5em !important; }
+.h-7e6 { height: 7.6em !important; }
+.h-7e7 { height: 7.7em !important; }
+.h-7e75 { height: 7.75em !important; }
+.h-7e8 { height: 7.8em !important; }
+.h-7e9 { height: 7.9em !important; }
+.h-8e { height: 8em !important; }
+.h-8e1 { height: 8.1em !important; }
+.h-8e2 { height: 8.2em !important; }
+.h-8e25 { height: 8.25em !important; }
+.h-8e3 { height: 8.3em !important; }
+.h-8e4 { height: 8.4em !important; }
+.h-8e5 { height: 8.5em !important; }
+.h-8e6 { height: 8.6em !important; }
+.h-8e7 { height: 8.7em !important; }
+.h-8e75 { height: 8.75em !important; }
+.h-8e8 { height: 8.8em !important; }
+.h-8e9 { height: 8.9em !important; }
+.h-9e { height: 9em !important; }
+.h-9e1 { height: 9.1em !important; }
+.h-9e2 { height: 9.2em !important; }
+.h-9e25 { height: 9.25em !important; }
+.h-9e3 { height: 9.3em !important; }
+.h-9e4 { height: 9.4em !important; }
+.h-9e5 { height: 9.5em !important; }
+.h-9e6 { height: 9.6em !important; }
+.h-9e7 { height: 9.7em !important; }
+.h-9e75 { height: 9.75em !important; }
+.h-9e8 { height: 9.8em !important; }
+.h-9e9 { height: 9.9em !important; }
+.h-10e { height: 10em !important; }
 /*@ Margin */
 .m-0 { margin: 0; }
 .m-auto { margin: auto; }
