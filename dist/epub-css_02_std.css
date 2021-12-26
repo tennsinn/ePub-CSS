@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
- * ePub-CSS v4.2.5 - Standard Styles
+ * ePub-CSS v4.2.6 - Standard Styles
  * https://github.com/tennsinn/ePub-CSS
  *
  * Licensed under GNU General Public License v3.0
@@ -9,27 +9,27 @@
 .wrap-no { white-space: nowrap; }
 .wrap-nom { word-wrap: normal; overflow-wrap: normal; }
 /*@ Text - indent */
-.i-0, p.i-0, li.i-0, .i-0 p, .i-0 li { text-indent: 0em !important; }
-.i-p0e5, p.i-p0e5, li.i-p0e5, .i-p0e5 p, .i-p0e5 li { text-indent: 0.5em; }
-.i-p1e, p.i-p1e, li.i-p1e, .i-p1e p, .i-p1e li { text-indent: 1em; }
-.i-p1e5, p.i-p1e5, li.i-p1e5, .i-p1e5 p, .i-p1e5 li { text-indent: 1.5em; }
-.i-p2e, p.i-p2e, li.i-p2e, .i-p2e p, .i-p2e li { text-indent: 2em; }
-.i-p2e5, p.i-p2e5, li.i-p2e5, .i-p2e5 p, .i-p2e5 li { text-indent: 2.5em; }
-.i-p3e, p.i-p3e, li.i-p3e, .i-p3e p, .i-p3e li { text-indent: 3em; }
-.i-p3e5, p.i-p3e5, li.i-p3e5, .i-p3e5 p, .i-p3e5 li { text-indent: 3.5em; }
-.i-p4e, p.i-p4e, li.i-p4e, .i-p4e p, .i-p4e li { text-indent: 4em; }
-.i-p4e5, p.i-p4e5, li.i-p4e5, .i-p4e5 p, .i-p4e5 li { text-indent: 4.5em; }
-.i-p5e, p.i-p5e, li.i-p5e, .i-p5e p, .i-p5e li { text-indent: 5em; }
-.i-p5e5, p.i-p5e5, li.i-p5e5, .i-p5e5 p, .i-p5e5 li { text-indent: 5.5em; }
-.i-p6e, p.i-p6e, li.i-p6e, .i-p6e p, .i-p6e li { text-indent: 6em; }
-.i-p6e5, p.i-p6e5, li.i-p6e5, .i-p6e5 p, .i-p6e5 li { text-indent: 6.5em; }
-.i-p7e, p.i-p7e, li.i-p7e, .i-p7e p, .i-p7e li { text-indent: 7em; }
-.i-p7e5, p.i-p7e5, li.i-p7e5, .i-p7e5 p, .i-p7e5 li { text-indent: 7.5em; }
-.i-p8e, p.i-p8e, li.i-p8e, .i-p8e p, .i-p8e li { text-indent: 8em; }
-.i-p8e5, p.i-p8e5, li.i-p8e5, .i-p8e5 p, .i-p8e5 li { text-indent: 8.5em; }
-.i-p9e, p.i-p9e, li.i-p9e, .i-p9e p, .i-p9e li { text-indent: 9em; }
-.i-p9e5, p.i-p9e5, li.i-p9e5, .i-p9e5 p, .i-p9e5 li { text-indent: 9.5em; }
-.i-p10e, p.i-p10e, li.i-p10e, .i-p10e p, .i-p10e li { text-indent: 10em; }
+p.i-0, li.i-0, .i-0 p, .i-0 li { text-indent: 0em !important; }
+p.i-p0e5, li.i-p0e5, .i-p0e5 p, .i-p0e5 li { text-indent: 0.5em; }
+p.i-p1e, li.i-p1e, .i-p1e p, .i-p1e li { text-indent: 1em; }
+p.i-p1e5, li.i-p1e5, .i-p1e5 p, .i-p1e5 li { text-indent: 1.5em; }
+p.i-p2e, li.i-p2e, .i-p2e p, .i-p2e li { text-indent: 2em; }
+p.i-p2e5, li.i-p2e5, .i-p2e5 p, .i-p2e5 li { text-indent: 2.5em; }
+p.i-p3e, li.i-p3e, .i-p3e p, .i-p3e li { text-indent: 3em; }
+p.i-p3e5, li.i-p3e5, .i-p3e5 p, .i-p3e5 li { text-indent: 3.5em; }
+p.i-p4e, li.i-p4e, .i-p4e p, .i-p4e li { text-indent: 4em; }
+p.i-p4e5, li.i-p4e5, .i-p4e5 p, .i-p4e5 li { text-indent: 4.5em; }
+p.i-p5e, li.i-p5e, .i-p5e p, .i-p5e li { text-indent: 5em; }
+p.i-p5e5, li.i-p5e5, .i-p5e5 p, .i-p5e5 li { text-indent: 5.5em; }
+p.i-p6e, li.i-p6e, .i-p6e p, .i-p6e li { text-indent: 6em; }
+p.i-p6e5, li.i-p6e5, .i-p6e5 p, .i-p6e5 li { text-indent: 6.5em; }
+p.i-p7e, li.i-p7e, .i-p7e p, .i-p7e li { text-indent: 7em; }
+p.i-p7e5, li.i-p7e5, .i-p7e5 p, .i-p7e5 li { text-indent: 7.5em; }
+p.i-p8e, li.i-p8e, .i-p8e p, .i-p8e li { text-indent: 8em; }
+p.i-p8e5, li.i-p8e5, .i-p8e5 p, .i-p8e5 li { text-indent: 8.5em; }
+p.i-p9e, li.i-p9e, .i-p9e p, .i-p9e li { text-indent: 9em; }
+p.i-p9e5, li.i-p9e5, .i-p9e5 p, .i-p9e5 li { text-indent: 9.5em; }
+p.i-p10e, li.i-p10e, .i-p10e p, .i-p10e li { text-indent: 10em; }
 /*@ Font - size */
 .s-0 { font-size: 0; }
 .s-0e05 { font-size: 0.05em; }

@@ -1,31 +1,31 @@
 @charset "UTF-8";
 /*!
- * ePub-CSS v4.2.5 - Advanced Styles
+ * ePub-CSS v4.2.6 - Advanced Styles
  * https://github.com/tennsinn/ePub-CSS
  *
  * Licensed under GNU General Public License v3.0
  */
 /*@ Text - hanging indent */
-.i-n0e5, p.i-n0e5, li.i-n0e5, .i-n0e5 p, .i-n0e5 li { text-indent: -0.5em; padding-left: 0.5em; }
-.i-n1e, p.i-n1e, li.i-n1e, .i-n1e p, .i-n1e li { text-indent: -1em; padding-left: 1em; }
-.i-n1e5, p.i-n1e5, li.i-n1e5, .i-n1e5 p, .i-n1e5 li { text-indent: -1.5em; padding-left: 1.5em; }
-.i-n2e, p.i-n2e, li.i-n2e, .i-n2e p, .i-n2e li { text-indent: -2em; padding-left: 2em; }
-.i-n2e5, p.i-n2e5, li.i-n2e5, .i-n2e5 p, .i-n2e5 li { text-indent: -2.5em; padding-left: 2.5em; }
-.i-n3e, p.i-n3e, li.i-n3e, .i-n3e p, .i-n3e li { text-indent: -3em; padding-left: 3em; }
-.i-n3e5, p.i-n3e5, li.i-n3e5, .i-n3e5 p, .i-n3e5 li { text-indent: -3.5em; padding-left: 3.5em; }
-.i-n4e, p.i-n4e, li.i-n4e, .i-n4e p, .i-n4e li { text-indent: -4em; padding-left: 4em; }
-.i-n4e5, p.i-n4e5, li.i-n4e5, .i-n4e5 p, .i-n4e5 li { text-indent: -4.5em; padding-left: 4.5em; }
-.i-n5e, p.i-n5e, li.i-n5e, .i-n5e p, .i-n5e li { text-indent: -5em; padding-left: 5em; }
-.i-n5e5, p.i-n5e5, li.i-n5e5, .i-n5e5 p, .i-n5e5 li { text-indent: -5.5em; padding-left: 5.5em; }
-.i-n6e, p.i-n6e, li.i-n6e, .i-n6e p, .i-n6e li { text-indent: -6em; padding-left: 6em; }
-.i-n6e5, p.i-n6e5, li.i-n6e5, .i-n6e5 p, .i-n6e5 li { text-indent: -6.5em; padding-left: 6.5em; }
-.i-n7e, p.i-n7e, li.i-n7e, .i-n7e p, .i-n7e li { text-indent: -7em; padding-left: 7em; }
-.i-n7e5, p.i-n7e5, li.i-n7e5, .i-n7e5 p, .i-n7e5 li { text-indent: -7.5em; padding-left: 7.5em; }
-.i-n8e, p.i-n8e, li.i-n8e, .i-n8e p, .i-n8e li { text-indent: -8em; padding-left: 8em; }
-.i-n8e5, p.i-n8e5, li.i-n8e5, .i-n8e5 p, .i-n8e5 li { text-indent: -8.5em; padding-left: 8.5em; }
-.i-n9e, p.i-n9e, li.i-n9e, .i-n9e p, .i-n9e li { text-indent: -9em; padding-left: 9em; }
-.i-n9e5, p.i-n9e5, li.i-n9e5, .i-n9e5 p, .i-n9e5 li { text-indent: -9.5em; padding-left: 9.5em; }
-.i-n10e, p.i-n10e, li.i-n10e, .i-n10e p, .i-n10e li { text-indent: -10em; padding-left: 10em; }
+p.i-n0e5, li.i-n0e5, .i-n0e5 p, .i-n0e5 li { text-indent: -0.5em; padding-left: 0.5em; }
+p.i-n1e, li.i-n1e, .i-n1e p, .i-n1e li { text-indent: -1em; padding-left: 1em; }
+p.i-n1e5, li.i-n1e5, .i-n1e5 p, .i-n1e5 li { text-indent: -1.5em; padding-left: 1.5em; }
+p.i-n2e, li.i-n2e, .i-n2e p, .i-n2e li { text-indent: -2em; padding-left: 2em; }
+p.i-n2e5, li.i-n2e5, .i-n2e5 p, .i-n2e5 li { text-indent: -2.5em; padding-left: 2.5em; }
+p.i-n3e, li.i-n3e, .i-n3e p, .i-n3e li { text-indent: -3em; padding-left: 3em; }
+p.i-n3e5, li.i-n3e5, .i-n3e5 p, .i-n3e5 li { text-indent: -3.5em; padding-left: 3.5em; }
+p.i-n4e, li.i-n4e, .i-n4e p, .i-n4e li { text-indent: -4em; padding-left: 4em; }
+p.i-n4e5, li.i-n4e5, .i-n4e5 p, .i-n4e5 li { text-indent: -4.5em; padding-left: 4.5em; }
+p.i-n5e, li.i-n5e, .i-n5e p, .i-n5e li { text-indent: -5em; padding-left: 5em; }
+p.i-n5e5, li.i-n5e5, .i-n5e5 p, .i-n5e5 li { text-indent: -5.5em; padding-left: 5.5em; }
+p.i-n6e, li.i-n6e, .i-n6e p, .i-n6e li { text-indent: -6em; padding-left: 6em; }
+p.i-n6e5, li.i-n6e5, .i-n6e5 p, .i-n6e5 li { text-indent: -6.5em; padding-left: 6.5em; }
+p.i-n7e, li.i-n7e, .i-n7e p, .i-n7e li { text-indent: -7em; padding-left: 7em; }
+p.i-n7e5, li.i-n7e5, .i-n7e5 p, .i-n7e5 li { text-indent: -7.5em; padding-left: 7.5em; }
+p.i-n8e, li.i-n8e, .i-n8e p, .i-n8e li { text-indent: -8em; padding-left: 8em; }
+p.i-n8e5, li.i-n8e5, .i-n8e5 p, .i-n8e5 li { text-indent: -8.5em; padding-left: 8.5em; }
+p.i-n9e, li.i-n9e, .i-n9e p, .i-n9e li { text-indent: -9em; padding-left: 9em; }
+p.i-n9e5, li.i-n9e5, .i-n9e5 p, .i-n9e5 li { text-indent: -9.5em; padding-left: 9.5em; }
+p.i-n10e, li.i-n10e, .i-n10e p, .i-n10e li { text-indent: -10em; padding-left: 10em; }
 /*@ Render - align */
 .a-mc, .a-mcenter { margin-left: auto !important; margin-right: auto !important; }
 .a-ml, .a-mleft { margin-left: 0 !important; margin-right: auto !important; }
