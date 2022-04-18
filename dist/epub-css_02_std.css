@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
- * ePub-CSS v4.3.0 - Standard Styles
+ * ePub-CSS v4.3.1 - Standard Styles
  * https://github.com/tennsinn/ePub-CSS
  *
  * Licensed under GNU General Public License v3.0
@@ -8,6 +8,18 @@
 /*@ Text - wrap */
 .wrap-no { white-space: nowrap; }
 .wrap-nom { word-wrap: normal; overflow-wrap: normal; }
+/*@ Text - line */
+.lh-1 { line-height: 1; }
+.lh-1d1 { line-height: 1.1; }
+.lh-1d2 { line-height: 1.2; }
+.lh-1d3 { line-height: 1.3; }
+.lh-1d4 { line-height: 1.4; }
+.lh-1d5 { line-height: 1.5; }
+.lh-1d6 { line-height: 1.6; }
+.lh-1d7 { line-height: 1.7; }
+.lh-1d8 { line-height: 1.8; }
+.lh-1d9 { line-height: 1.9; }
+.lh-2 { line-height: 2; }
 /*@ Text - indent */
 p.i-0, li.i-0, .i-0 p, .i-0 li { text-indent: 0em !important; }
 p.i-p0e5, li.i-p0e5, .i-p0e5 p, .i-p0e5 li { text-indent: 0.5em; }
