@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
- * ePub-CSS v4.3.1 - Components
+ * ePub-CSS v4.3.2 - Components
  * https://github.com/tennsinn/ePub-CSS
  *
  * Licensed under GNU General Public License v3.0
@@ -20,11 +20,11 @@
 .infobox p/*# [epub|type=contributors] > section p */ { padding-left: 0.75em; padding-right: 0.75em; }
 .infobox p.top/*# [epub|type=contributors] > section p:first-child */ { padding-top: 0.25em; margin-top: 0.25em; border-top: thin solid black; }
 .infobox p.bottom/*# [epub|type=contributors] > section p:last-child */ { padding-bottom: 0.25em; border-bottom: thin solid black; }
-/*@ Components - introdl */
-.introdl { font-size: 1em; line-height: 1.1; }
-.introdl dt, .introdl p.dt { font-family: Kai, SP, serif; text-indent: 0em; margin-top: 1em; margin: 1em 0.5em 0 0.5em; }
-.introdl dt span, .introdl p.dt span { font-family: Song, SP, serif; font-size: 0.7em; color: grey; }
-.introdl dd, .introdl p.dd { text-indent: 2em; margin: 0.5em 0.5em; }
+/*@ Components - glossary */
+.glossary dl, .glossary div.dl { font-size: 1em; line-height: 1.1; }
+.glossary dt, .glossary p.dt { font-family: Kai, SP, serif; font-weight: bold; text-indent: 0em; margin-top: 1em; margin: 1em 0.5em 0 0.5em; }
+.glossary dt span, .glossary p.dt span { font-family: Song, SP, serif; font-size: 0.7em; color: grey; }
+.glossary dd, .glossary p.dd { text-indent: 2em; margin: 0.25em 0.5em; }
 /*@ Components - list - standard left, normal normal */
 .list-sl-nn { font-size: 1.1em; line-height: 1.1; text-align: left !important; margin: 0 auto; }
 .list-sl-nn > li { margin-top: 1em; }
