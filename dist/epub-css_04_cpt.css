@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
- * ePub-CSS v4.3.2 - Components
+ * ePub-CSS v4.3.3 - Components
  * https://github.com/tennsinn/ePub-CSS
  *
  * Licensed under GNU General Public License v3.0
@@ -79,7 +79,7 @@ h3 ~ p.spr, .h3 ~ p.spr { margin: 1.25em 0; }
 .rhombus > .right1 { border-top: 0em solid transparent; border-bottom: 0.5em solid; border-left: 2em solid transparent; }
 .rhombus > .right2 { border-top: 0.5em solid; border-bottom: 0em solid transparent; border-left: 2em solid transparent; }
 /*@ Components - container - rhombus */
-.rhombus-box { margin: 1em auto; -o-transform: rotate(45deg); -ms-transform: rotate(45deg); -moz-transform: rotate(45deg); -webkit-transform: rotate(45deg); transform: rotate(45deg); }
+.rhombus-box { margin: auto; -o-transform: rotate(45deg); -ms-transform: rotate(45deg); -moz-transform: rotate(45deg); -webkit-transform: rotate(45deg); transform: rotate(45deg); }
 .rhombus-box > .in { margin: auto; -o-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -webkit-transform: rotate(-45deg); transform: rotate(-45deg); }
 /*@ Lattice - biserial, separated, v2.1.1 */
 .information .lattice { width: 16em; padding: 5%; margin: auto; }
