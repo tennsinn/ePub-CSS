@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
- * ePub-CSS v4.4.4 - Basic Styles
+ * ePub-CSS v4.4.5 - Basic Styles
  * https://github.com/tennsinn/ePub-CSS
  *
  * Licensed under GNU General Public License v3.0
@@ -44,9 +44,14 @@ body > .section { overflow: visible; margin: 0 auto; width: 100%; }
 /*@ Format - section for Duokan */
 body > .section { duokan-bleed: leftright; }
 /*@ Format - pragraph */
-.introduction .section, .preface .section, .chapter .section, .afterword .section, .feature .section, .foreshow .section, .bibliography .section { text-indent: 2em; }
-.introduction .section p, .epigraph .section p, .preface .section p, .chapter .section p, .afterword .section p, .feature .section p, .foreshow .section p { margin: 0.5em 0.5em; }
+.introduction .section, .acknowledgments .section, .preface .section, .foreword .section, .afterword .section, .feature .section, .foreshow .section { text-indent: 2em; }
+.introduction .section p, .acknowledgments .section p, .preface .section p, .afterword .section p, .afterword .section p, .feature .section p, .foreshow .section p { margin: 0.5em 0.5em; }
+.prologue .section, .epilogue .section, .chapter .section { text-indent: 2em; }
+.prologue .section p, .epilogue .section p, .chapter .section p { margin: 0.5em 0.5em; }
 .appendix .section p { margin: 0.25em 0.5em; }
+.epigraph .section p { margin: 0.5em 0.5em; }
+.glossary .section, .bibliography .section { text-indent: 2em; }
+.glossary .section p, .bibliography .section p { margin: 0.5em 0.5em; }
 .dedication > .section { width: 20em; margin: 20% auto 0 auto; }
 .section-text { text-indent: 2em; }
 .section-text p { margin: 0.25em 0.5em; }
