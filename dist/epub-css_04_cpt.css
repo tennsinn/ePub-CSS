@@ -1,9 +1,8 @@
 @charset "UTF-8";
 /*!
- * ePub-CSS v4.4.5 - Components
- * https://github.com/tennsinn/ePub-CSS
+ * ePub-CSS
  *
- * Licensed under GNU General Public License v3.0
+ * Stylesheet 04 Components
  */
 /*@ Overall */
 @font-face { font-family: "org"; src: url("../Fonts/org.ttf") format("truetype"); }
